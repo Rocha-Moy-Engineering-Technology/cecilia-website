@@ -17,7 +17,7 @@ export const pt: ProductContent = {
     second: 'Mais clareza, a cada dia.',
     body: 'Um pouco mais de compreensão, dia após dia. A Cecilia reúne seu ciclo e seus sinais de fertilidade para ajudar você a entender o que eles significam hoje.',
     action: 'Participe da beta aberta',
-    note: 'Para iOS · Disponível pelo TestFlight',
+    note: 'Para iOS · Se você ainda não tem o TestFlight, instale-o primeiro. Depois, volte aqui e toque neste botão novamente para instalar a Cecilia.',
   },
   example: 'Telas de exemplo · Dados ilustrativos de ciclo',
   intro: {
@@ -60,8 +60,8 @@ export const pt: ProductContent = {
     title: 'Conheça a Cecilia.',
     body: 'A beta aberta para iOS está pronta para você explorar. Entre pelo Apple TestFlight e comece com o seu próprio ciclo.',
     steps: [
-      'Instale o Apple TestFlight no seu dispositivo iOS.',
-      'Abra o convite da beta e instale a Cecilia.',
+      'Toque em “Participe da beta aberta” e instale o TestFlight, se solicitado.',
+      'Após instalar o TestFlight, volte a esta página e toque em “Participe da beta aberta” novamente para instalar a Cecilia.',
       'Entre na sua conta, configure seu perfil e comece a registrar seus sinais.',
     ],
     note: 'Esta é uma versão beta. As funcionalidades e a experiência podem mudar à medida que o aplicativo evolui.',

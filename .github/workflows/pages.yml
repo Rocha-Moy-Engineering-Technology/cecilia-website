@@ -20,8 +20,6 @@ jobs:
       pages: read
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      ASTRO_SCREENSHOT_DIR: ${{ runner.temp }}/cecilia-website-evidence
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -31,6 +29,8 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chrome
       - run: npm run test:generated
+        env:
+          ASTRO_SCREENSHOT_DIR: ${{ runner.temp }}/cecilia-website-evidence
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
