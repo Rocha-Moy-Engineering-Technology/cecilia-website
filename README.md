@@ -1,22 +1,13 @@
-# cecilia-website
+# Cecilia website
 
-Astro 7.2 `astro-static` project for Railway with fully prerendered static output served by an explicit production server.
-
-## Routes
-
-- `/` and `/health`
-- `/health` returns HTTP 200, `application/json`, and exactly `{"status":"ok"}`.
-
-## Development
-
-```sh
-npm install
-npm run dev
-npm run test:generated
-```
-
-## Railway
-
-Railway uses the Node engine and package scripts in `package.json`. The production start command binds `0.0.0.0` and reads Railway's `PORT` variable. No `railway.json` is required.
-
-See `docs/md/DEVELOPMENT.md` for mode behavior and validation commands.
+- `astro.config.mjs` — static website configuration.
+- `logic/` — product content, site settings, and language selection.
+- `state/` — Astro pages, shared components, styles, and the browser adapter.
+- `types/` — shared TypeScript contracts.
+- `public/` — app screenshots, icon, asset provenance, and font license.
+- `tests/` — unit, integration, behavior, browser, and smoke tests.
+- `docs/` — product, design, development, and validation records.
+- `evidence_gallery/` — visual evidence of the website.
+- `.github/` — validation and GitHub Pages publication workflow.
+- `package.json` and `package-lock.json` — commands and pinned dependencies.
+- `eslint.config.js`, `vitest.config.ts`, `playwright.config.ts`, and `tsconfig.json` — quality and test configuration.

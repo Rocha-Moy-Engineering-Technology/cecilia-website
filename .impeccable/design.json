@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T14:10:02.748643Z",
+  "title": "Design System: Cecilia",
+  "extensions": {
+    "colorMeta": {
+      "cream": {
+        "role": "neutral",
+        "displayName": "Warm Cream",
+        "tonalRamp": [
+          "oklch(0.1500 0.00790 73.74)",
+          "oklch(0.2643 0.00790 73.74)",
+          "oklch(0.3786 0.00790 73.74)",
+          "oklch(0.4929 0.00790 73.74)",
+          "oklch(0.6071 0.00790 73.74)",
+          "oklch(0.7214 0.00790 73.74)",
+          "oklch(0.8357 0.00790 73.74)",
+          "oklch(0.9500 0.00790 73.74)"
+        ]
+      },
+      "plum": {
+        "role": "primary",
+        "displayName": "Cecilia Plum",
+        "tonalRamp": [
+          "oklch(0.1500 0.08915 351.77)",
+          "oklch(0.2643 0.08915 351.77)",
+          "oklch(0.3786 0.08915 351.77)",
+          "oklch(0.4929 0.08915 351.77)",
+          "oklch(0.6071 0.08915 351.77)",
+          "oklch(0.7214 0.08915 351.77)",
+          "oklch(0.8357 0.08915 351.77)",
+          "oklch(0.9500 0.08915 351.77)"
+        ]
+      },
+      "plum-hover": {
+        "role": "primary",
+        "displayName": "Deep Plum",
+        "tonalRamp": [
+          "oklch(0.1500 0.08381 351.43)",
+          "oklch(0.2643 0.08381 351.43)",
+          "oklch(0.3786 0.08381 351.43)",
+          "oklch(0.4929 0.08381 351.43)",
+          "oklch(0.6071 0.08381 351.43)",
+          "oklch(0.7214 0.08381 351.43)",
+          "oklch(0.8357 0.08381 351.43)",
+          "oklch(0.9500 0.08381 351.43)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Dark Brown Ink",
+        "tonalRamp": [
+          "oklch(0.1500 0.01597 358.29)",
+          "oklch(0.2643 0.01597 358.29)",
+          "oklch(0.3786 0.01597 358.29)",
+          "oklch(0.4929 0.01597 358.29)",
+          "oklch(0.6071 0.01597 358.29)",
+          "oklch(0.7214 0.01597 358.29)",
+          "oklch(0.8357 0.01597 358.29)",
+          "oklch(0.9500 0.01597 358.29)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Brown",
+        "tonalRamp": [
+          "oklch(0.1500 0.02044 355.68)",
+          "oklch(0.2643 0.02044 355.68)",
+          "oklch(0.3786 0.02044 355.68)",
+          "oklch(0.4929 0.02044 355.68)",
+          "oklch(0.6071 0.02044 355.68)",
+          "oklch(0.7214 0.02044 355.68)",
+          "oklch(0.8357 0.02044 355.68)",
+          "oklch(0.9500 0.02044 355.68)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Warm Divider",
+        "tonalRamp": [
+          "oklch(0.1500 0.01915 67.58)",
+          "oklch(0.2643 0.01915 67.58)",
+          "oklch(0.3786 0.01915 67.58)",
+          "oklch(0.4929 0.01915 67.58)",
+          "oklch(0.6071 0.01915 67.58)",
+          "oklch(0.7214 0.01915 67.58)",
+          "oklch(0.8357 0.01915 67.58)",
+          "oklch(0.9500 0.01915 67.58)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(0.1500 0.00000 0.00)",
+          "oklch(0.2643 0.00000 0.00)",
+          "oklch(0.3786 0.00000 0.00)",
+          "oklch(0.4929 0.00000 0.00)",
+          "oklch(0.6071 0.00000 0.00)",
+          "oklch(0.7214 0.00000 0.00)",
+          "oklch(0.8357 0.00000 0.00)",
+          "oklch(0.9500 0.00000 0.00)"
+        ]
+      },
+      "screen-rose": {
+        "role": "secondary",
+        "displayName": "Today Rose",
+        "tonalRamp": [
+          "oklch(0.1500 0.01360 347.96)",
+          "oklch(0.2643 0.01360 347.96)",
+          "oklch(0.3786 0.01360 347.96)",
+          "oklch(0.4929 0.01360 347.96)",
+          "oklch(0.6071 0.01360 347.96)",
+          "oklch(0.7214 0.01360 347.96)",
+          "oklch(0.8357 0.01360 347.96)",
+          "oklch(0.9500 0.01360 347.96)"
+        ]
+      },
+      "screen-sand": {
+        "role": "secondary",
+        "displayName": "Calendar Sand",
+        "tonalRamp": [
+          "oklch(0.1500 0.01537 77.07)",
+          "oklch(0.2643 0.01537 77.07)",
+          "oklch(0.3786 0.01537 77.07)",
+          "oklch(0.4929 0.01537 77.07)",
+          "oklch(0.6071 0.01537 77.07)",
+          "oklch(0.7214 0.01537 77.07)",
+          "oklch(0.8357 0.01537 77.07)",
+          "oklch(0.9500 0.01537 77.07)"
+        ]
+      },
+      "screen-sage": {
+        "role": "secondary",
+        "displayName": "Chart Sage",
+        "tonalRamp": [
+          "oklch(0.1500 0.00993 181.40)",
+          "oklch(0.2643 0.00993 181.40)",
+          "oklch(0.3786 0.00993 181.40)",
+          "oklch(0.4929 0.00993 181.40)",
+          "oklch(0.6071 0.00993 181.40)",
+          "oklch(0.7214 0.00993 181.40)",
+          "oklch(0.8357 0.00993 181.40)",
+          "oklch(0.9500 0.00993 181.40)"
+        ]
+      },
+      "methods-copy": {
+        "role": "neutral",
+        "displayName": "Light Methods Copy",
+        "tonalRamp": [
+          "oklch(0.1500 0.01441 350.08)",
+          "oklch(0.2643 0.01441 350.08)",
+          "oklch(0.3786 0.01441 350.08)",
+          "oklch(0.4929 0.01441 350.08)",
+          "oklch(0.6071 0.01441 350.08)",
+          "oklch(0.7214 0.01441 350.08)",
+          "oklch(0.8357 0.01441 350.08)",
+          "oklch(0.9500 0.01441 350.08)"
+        ]
+      },
+      "methods-line": {
+        "role": "neutral",
+        "displayName": "Methods Divider",
+        "tonalRamp": [
+          "oklch(0.1500 0.05761 349.01)",
+          "oklch(0.2643 0.05761 349.01)",
+          "oklch(0.3786 0.05761 349.01)",
+          "oklch(0.4929 0.05761 349.01)",
+          "oklch(0.6071 0.05761 349.01)",
+          "oklch(0.7214 0.05761 349.01)",
+          "oklch(0.8357 0.05761 349.01)",
+          "oklch(0.9500 0.05761 349.01)"
+        ]
+      },
+      "cycle-red": {
+        "role": "tertiary",
+        "displayName": "Cycle Red",
+        "tonalRamp": [
+          "oklch(0.1500 0.18597 24.75)",
+          "oklch(0.2643 0.18597 24.75)",
+          "oklch(0.3786 0.18597 24.75)",
+          "oklch(0.4929 0.18597 24.75)",
+          "oklch(0.6071 0.18597 24.75)",
+          "oklch(0.7214 0.18597 24.75)",
+          "oklch(0.8357 0.18597 24.75)",
+          "oklch(0.9500 0.18597 24.75)"
+        ]
+      },
+      "cycle-orange": {
+        "role": "tertiary",
+        "displayName": "Cycle Orange",
+        "tonalRamp": [
+          "oklch(0.1500 0.14780 69.41)",
+          "oklch(0.2643 0.14780 69.41)",
+          "oklch(0.3786 0.14780 69.41)",
+          "oklch(0.4929 0.14780 69.41)",
+          "oklch(0.6071 0.14780 69.41)",
+          "oklch(0.7214 0.14780 69.41)",
+          "oklch(0.8357 0.14780 69.41)",
+          "oklch(0.9500 0.14780 69.41)"
+        ]
+      },
+      "cycle-purple": {
+        "role": "tertiary",
+        "displayName": "Cycle Purple",
+        "tonalRamp": [
+          "oklch(0.1500 0.16154 297.66)",
+          "oklch(0.2643 0.16154 297.66)",
+          "oklch(0.3786 0.16154 297.66)",
+          "oklch(0.4929 0.16154 297.66)",
+          "oklch(0.6071 0.16154 297.66)",
+          "oklch(0.7214 0.16154 297.66)",
+          "oklch(0.8357 0.16154 297.66)",
+          "oklch(0.9500 0.16154 297.66)"
+        ]
+      },
+      "cycle-green": {
+        "role": "tertiary",
+        "displayName": "Cycle Green",
+        "tonalRamp": [
+          "oklch(0.1500 0.14505 150.39)",
+          "oklch(0.2643 0.14505 150.39)",
+          "oklch(0.3786 0.14505 150.39)",
+          "oklch(0.4929 0.14505 150.39)",
+          "oklch(0.6071 0.14505 150.39)",
+          "oklch(0.7214 0.14505 150.39)",
+          "oklch(0.8357 0.14505 150.39)",
+          "oklch(0.9500 0.14505 150.39)"
+        ]
+      },
+      "cycle-teal": {
+        "role": "tertiary",
+        "displayName": "Cycle Teal",
+        "tonalRamp": [
+          "oklch(0.1500 0.08672 195.05)",
+          "oklch(0.2643 0.08672 195.05)",
+          "oklch(0.3786 0.08672 195.05)",
+          "oklch(0.4929 0.08672 195.05)",
+          "oklch(0.6071 0.08672 195.05)",
+          "oklch(0.7214 0.08672 195.05)",
+          "oklch(0.8357 0.08672 195.05)",
+          "oklch(0.9500 0.08672 195.05)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Main Heading",
+        "purpose": "Hero heading; compact size is recorded under responsive behavior."
+      },
+      "headline": {
+        "displayName": "Section Heading",
+        "purpose": "Main section hierarchy."
+      },
+      "title": {
+        "displayName": "Feature Title",
+        "purpose": "Feature explanations, with a compact fixed-size override."
+      },
+      "body": {
+        "displayName": "Explanatory Copy",
+        "purpose": "Main feature and method paragraphs."
+      },
+      "button": {
+        "displayName": "Action Label",
+        "purpose": "Shared beta action."
+      },
+      "navigation": {
+        "displayName": "Section Link",
+        "purpose": "Desktop section navigation."
+      },
+      "question": {
+        "displayName": "Question Summary",
+        "purpose": "Expandable question controls."
+      },
+      "caption": {
+        "displayName": "Example Caption",
+        "purpose": "Illustrative-data labels beneath app screens."
+      }
+    },
+    "shadows": [
+      {
+        "name": "screen",
+        "value": "0 20px 55px #44233316",
+        "purpose": "Diffuse depth beneath real app screenshots only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "0.2s ease",
+        "purpose": "Action background, action arrow gap, and question icon rotation."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "smooth",
+        "purpose": "Section navigation; reduced motion changes it to auto."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none !important; scroll-behavior: auto",
+        "purpose": "Respect the reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intermediate",
+        "value": "1100px"
+      },
+      {
+        "name": "compact",
+        "value": "760px"
+      }
+    ],
+    "focus": {
+      "outline": "3px solid var(--plum)",
+      "outlineOffset": "6px",
+      "answerClearance": "12px"
+    },
+    "tonalRampPurpose": "Synthesized dark-to-light OKLCH previews derived from each source color. These strips are panel metadata, not additional production palette tokens.",
+    "evidence": {
+      "designDocument": "docs/md/DESIGN.md",
+      "productTruth": "docs/md/PRODUCT.md",
+      "directionContract": "docs/md/SURFACE.md",
+      "sources": [
+        "state/adapters/inbound/styles/global.css",
+        "state/adapters/inbound/components/ProductPage.astro",
+        "state/adapters/inbound/components/FeatureSection.astro",
+        "state/adapters/inbound/components/Arrow.astro"
+      ],
+      "captureNames": [
+        "product-en-1440-root.png",
+        "product-en-390-root.png",
+        "product-es-1440-root.png",
+        "product-es-390-root.png",
+        "product-pt-1440-root.png",
+        "product-pt-390-root.png"
+      ],
+      "authority": "The user-pinned product plan and approved extension of the Cecilia app identity; no approved comp, roll seed, or quality board was available.",
+      "documenterScope": "Extracted source rules and inspected the six supplied current layouts. No source changes or independent test run were performed by this documentation handoff.",
+      "parentReportedFinishReview": "The fresh finish review matched the pinned product plan and six layouts. Its one FAQ focus/answer overlap was fixed, and the same reviewer marked the sole fix resolved/ship.",
+      "notCanonized": [
+        "The unused --rose declaration is excluded from frontmatter tokens.",
+        "No defect is recorded as a design-system rule; the former FAQ overlap is represented by its corrected answer clearance."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Beta Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The shared pill action used in the hero and beta section.",
+      "html": "<a class=\"ds-button\" href=\"#beta\">Join the open beta<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+      "css": ".ds-button{font-family:'Nunito Sans',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:56px;padding:15px 26px;background:var(--plum,#8c4f6b);color:white;border:1px solid transparent;border-radius:999px;font-size:16px;line-height:1.4;font-weight:700;text-decoration:none;transition:background .2s ease,gap .2s ease}.ds-button:hover{background:#733c56;gap:30px}.ds-button:focus-visible{outline:3px solid var(--plum,#8c4f6b);outline-offset:6px;}.ds-button svg{flex-shrink:0}@media(max-width:760px){.ds-button{font-size:15px;min-height:54px}}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}"
+    },
+    {
+      "name": "Section Navigation",
+      "kind": "nav",
+      "refersTo": "section-navigation",
+      "description": "Three ordinary section links, moved to a full header row on compact screens.",
+      "html": "<nav class=\"ds-section-nav\" aria-label=\"The app\"><a href=\"#features\">The app</a><a href=\"#methods\">The methods</a><a href=\"#beta\">Join the beta</a></nav>",
+      "css": ".ds-section-nav{font-family:'Nunito Sans',sans-serif;display:flex;gap:26px;font-size:15px;color:var(--ink,#2e2427)}.ds-section-nav a{padding-block:12px;color:inherit;text-decoration:none;text-decoration-thickness:1px;text-underline-offset:5px}.ds-section-nav a:hover{color:var(--plum,#8c4f6b);text-decoration:underline}.ds-section-nav a:focus-visible{outline:3px solid var(--plum,#8c4f6b);outline-offset:6px;}@media(max-width:760px){.ds-section-nav{width:100%;justify-content:space-between;gap:14px;font-size:14px;border-top:1px solid var(--line,#e8ddd2)}}"
+    },
+    {
+      "name": "Language Navigation",
+      "kind": "nav",
+      "description": "Persistent locale links with a visibly selected current language.",
+      "html": "<nav class=\"ds-language-nav\" aria-label=\"Choose language\"><a href=\"./en/\" lang=\"en\" aria-current=\"page\">English</a><a href=\"./es/\" lang=\"es\">Español</a><a href=\"./pt/\" lang=\"pt-BR\">Português</a></nav>",
+      "css": ".ds-language-nav{font-family:'Nunito Sans',sans-serif;display:flex;gap:16px;font-size:13px}.ds-language-nav a{padding-block:12px;color:var(--muted,#75666b);text-decoration:none;text-decoration-thickness:1px;text-underline-offset:5px}.ds-language-nav a[aria-current]{color:var(--plum,#8c4f6b);font-weight:800;text-decoration:underline}.ds-language-nav a:hover{color:var(--plum,#8c4f6b)}.ds-language-nav a:focus-visible{outline:3px solid var(--plum,#8c4f6b);outline-offset:6px;}@media(max-width:760px){.ds-language-nav{gap:11px;font-size:11px}}"
+    },
+    {
+      "name": "Five-Color Cycle Divider",
+      "kind": "custom",
+      "description": "The five-color app identity extended into a thin section divider.",
+      "html": "<div class=\"ds-cycle-divider\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></div>",
+      "css": ".ds-cycle-divider{display:flex;gap:8px}.ds-cycle-divider i{height:4px;flex:1;border-radius:6px;background:#d84343}.ds-cycle-divider i:nth-child(2){background:#f2a33a}.ds-cycle-divider i:nth-child(3){background:#7e57c2}.ds-cycle-divider i:nth-child(4){background:#3ba55c}.ds-cycle-divider i:nth-child(5){background:#2c8c8c}@media(max-width:760px){.ds-cycle-divider{gap:5px}}"
+    },
+    {
+      "name": "Expandable Question",
+      "kind": "custom",
+      "refersTo": "faq-summary",
+      "description": "Native details and summary with the implemented focus-to-answer clearance.",
+      "html": "<div class=\"ds-questions\"><details><summary>What is Cecilia for?<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path></svg></summary><p>Cecilia helps you record your menstrual cycle and body signs and understand a daily fertility forecast. It brings daily guidance, a calendar, and temperature charts into one app.</p></details></div>",
+      "css": ".ds-questions{font-family:'Nunito Sans',sans-serif;color:var(--ink,#2e2427)}.ds-questions details{border-bottom:1px solid var(--line,#e8ddd2)}.ds-questions summary{cursor:pointer;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:17px;font-weight:700;line-height:1.5;list-style:none}.ds-questions summary::-webkit-details-marker{display:none}.ds-questions summary:focus-visible{outline:3px solid var(--plum,#8c4f6b);outline-offset:6px;}.ds-questions summary svg{color:var(--plum,#8c4f6b);flex-shrink:0;transition:transform .2s ease}.ds-questions details[open] summary svg{transform:rotate(45deg)}.ds-questions details p{margin:0;padding-top:12px;padding-bottom:24px;color:var(--muted,#75666b);font-size:16px;line-height:1.7}@media(max-width:760px){.ds-questions summary{font-size:16px}}@media(prefers-reduced-motion:reduce){.ds-questions summary svg{transition:none}}"
+    },
+    {
+      "name": "Numbered Beta Steps",
+      "kind": "custom",
+      "description": "A three-column ordered sequence that becomes numbered rows on compact screens.",
+      "html": "<ol class=\"ds-beta-steps\"><li>Install Apple TestFlight on your iOS device.</li><li>Open the beta invitation and install Cecilia.</li><li>Sign in, set up your profile, and start recording your signs.</li></ol>",
+      "css": ".ds-beta-steps{font-family:'Nunito Sans',sans-serif;color:var(--ink,#2e2427);display:grid;grid-template-columns:repeat(3,1fr);gap:48px;padding:0;margin-block:52px 40px;list-style:none;counter-reset:steps}.ds-beta-steps li{counter-increment:steps;font-size:17px;line-height:1.6}.ds-beta-steps li::before{content:counter(steps);display:block;color:var(--plum,#8c4f6b);font-weight:800;font-size:30px;margin-bottom:14px;border-top:1px solid var(--line,#e8ddd2);padding-top:20px}@media(max-width:760px){.ds-beta-steps{grid-template-columns:1fr;gap:22px;margin-block:30px}.ds-beta-steps li{display:grid;grid-template-columns:32px 1fr;gap:15px;font-size:16px}.ds-beta-steps li::before{border:0;padding:0;margin:0;font-size:24px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Cecilia's cream and plum app identity",
+    "overview": "Cecilia pairs a warm cream canvas with plum actions, dark brown text, and the app's five-color cycle glyph. Rounded Nunito Sans typography and generous space give the website the same approachable character as the application. Real localized app screens supply the visual detail.\n\nThis record describes the implemented website, rather than a proposed redesign. It was extracted from `state/adapters/inbound/styles/global.css`, `state/adapters/inbound/components/`, and the six current English, Spanish, and Portuguese captures at desktop and mobile widths. The user-pinned direction in `docs/md/SURFACE.md` was the visual authority; no approved comp or quality-board comparison was available.",
+    "keyCharacteristics": [
+      "Warm cream backgrounds, plum emphasis, and dark brown reading text.",
+      "One rounded sans-serif family with a clear, balanced heading hierarchy.",
+      "Open sections, restrained dividers, and spacious screenshot figures.",
+      "Real app screens and the original five-color cycle identity.",
+      "The same visual system across all three languages."
+    ],
+    "rules": [
+      {
+        "name": "The App Identity Rule",
+        "body": "Preserve the app's cream, plum, and five-color cycle identity when extending this website.",
+        "section": "colors"
+      },
+      {
+        "name": "The Quiet Hierarchy Rule",
+        "body": "Use size, weight, spacing, and a plum phrase to establish emphasis within the single type family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Open Sections Rule",
+        "body": "Separate explanations with space, tonal sections, and thin dividers; use contained surfaces to present the app screenshots.",
+        "section": "layout"
+      },
+      {
+        "name": "The Screen Depth Rule",
+        "body": "Keep elevation attached to the app imagery; use spacing and color for the surrounding page structure.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Native Screens Rule",
+        "body": "Use the real localized app screenshots, keep their aspect ratio, and keep the illustrative-data caption visible.",
+        "section": "components"
+      },
+      {
+        "name": "The Room for Focus Rule",
+        "body": "Interactive elements use a plum outline (3px) offset from the element (6px). Preserve the answer clearance below an expanded question's summary so the outline does not cross the answer text. The skip link becomes visible on focus.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do retain cream as the page canvas and plum as the shared action and emphasis color.",
+      "Do use the original cycle glyph and preserve the divider's five-color order.",
+      "Do keep real screenshots localized and visibly labeled as illustrative examples.",
+      "Do let translated content wrap naturally while retaining the shared hierarchy and reading order.",
+      "Do preserve visible keyboard focus, answer clearance, and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't redraw the application interface or substitute invented product imagery for the real screenshots.",
+      "Don't use the screenshot surface tints as competing primary action colors.",
+      "Don't crop away app content or the example-data captions to force a fixed composition.",
+      "Don't turn an unused stylesheet declaration into an established design token."
+    ]
+  }
+}

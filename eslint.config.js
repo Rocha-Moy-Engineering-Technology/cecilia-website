@@ -6,6 +6,15 @@ export default [
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,
   {
+    files: [
+      'logic/**/*.ts',
+      'state/**/*.{ts,astro}',
+      'types/**/*.ts',
+      'astro.config.mjs',
+    ],
+    rules: { complexity: ['error', 6] },
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.browser,

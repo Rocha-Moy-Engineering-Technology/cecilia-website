@@ -1,23 +1,13 @@
 import tailwindcss from '@tailwindcss/vite';
-import serveConfig from './serve.json';
 import { defineConfig } from 'astro/config';
-
-/** @type {import('vite').Plugin} */
-const serveConfigPlugin = {
-  name: 'static-serve-config',
-  generateBundle() {
-    this.emitFile({
-      type: 'asset',
-      fileName: 'serve.json',
-      source: JSON.stringify(serveConfig),
-    });
-  },
-};
+import { SITE } from './logic/site';
 
 export default defineConfig({
+  site: SITE.origin,
+  base: SITE.base,
   srcDir: './state/adapters/inbound',
   output: 'static',
   vite: {
-    plugins: [tailwindcss(), serveConfigPlugin],
+    plugins: [tailwindcss()],
   },
 });
