@@ -1,0 +1,31 @@
+---
+import type { Feature } from '../../../../types/site';
+interface Props {
+  feature: Feature;
+  index: number;
+  base: string;
+  locale: string;
+  example: string;
+  observations: string;
+}
+const { feature, index, base, locale, example, observations } = Astro.props;
+---
+
+<article class:list={['feature', { reverse: index === 1 }]}>
+  <div class="feature-copy">
+    <h3>{feature.title}</h3>
+    <p>{feature.body}</p>
+    {index === 0 && <p class="observation-note">{observations}</p>}
+  </div>
+  <figure class:list={['feature-figure', `feature-${feature.screen}`]}>
+    <img
+      class="screen"
+      src={`${base}screens/${locale}-${feature.screen}.webp`}
+      width="620"
+      height="1348"
+      alt={feature.alt}
+      loading="lazy"
+    />
+    <figcaption>{example}</figcaption>
+  </figure>
+</article>

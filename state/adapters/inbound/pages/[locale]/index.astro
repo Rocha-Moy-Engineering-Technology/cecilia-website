@@ -1,0 +1,14 @@
+---
+import ProductPage from '../../components/ProductPage.astro';
+import { content } from '../../../../../logic/content';
+import { LOCALES } from '../../../../../logic/site';
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({
+    params: { locale },
+    props: { locale, copy: content[locale] },
+  }));
+}
+const { locale, copy } = Astro.props;
+---
+
+<ProductPage locale={locale} copy={copy} />

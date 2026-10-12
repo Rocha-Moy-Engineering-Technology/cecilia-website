@@ -1,0 +1,206 @@
+---
+import '@fontsource/nunito-sans/latin-400.css';
+import '@fontsource/nunito-sans/latin-600.css';
+import '@fontsource/nunito-sans/latin-700.css';
+import '@fontsource/nunito-sans/latin-800.css';
+import '../styles/global.css';
+import Arrow from './Arrow.astro';
+import FeatureSection from './FeatureSection.astro';
+import { LOCALES, LANGUAGE_NAMES, SITE } from '../../../../logic/site';
+import { localePath } from '../../../../logic/language';
+import type { Locale, ProductContent } from '../../../../types/site';
+interface Props {
+  locale: Locale;
+  copy: ProductContent;
+}
+const { locale, copy } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const canonical = `${SITE.origin}${localePath(locale, base)}`;
+---
+
+<!doctype html>
+<html lang={copy.language}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FBF7F2" />
+    <title>{copy.title}</title>
+    <meta name="description" content={copy.description} />
+    <link rel="icon" type="image/png" href={`${base}icon.png`} />
+    <link rel="canonical" href={canonical} />
+    {
+      LOCALES.map((language) => (
+        <link
+          rel="alternate"
+          hreflang={language === 'pt' ? 'pt-BR' : language}
+          href={`${SITE.origin}${localePath(language, base)}`}
+        />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={`${SITE.origin}${base}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cecilia" />
+    <meta property="og:title" content={copy.title} />
+    <meta property="og:description" content={copy.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE.origin}${base}icon.png`} />
+    <meta property="og:image:alt" content="Cecilia" />
+    <meta name="twitter:card" content="summary" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{copy.skip}</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href={localePath(locale, base)} aria-label="Cecilia"
+        ><img src={`${base}icon.png`} width="40" height="40" alt="" />Cecilia</a
+      >
+      <nav class="section-nav" aria-label={copy.nav.features}>
+        <a href="#features">{copy.nav.features}</a><a href="#methods"
+          >{copy.nav.methods}</a
+        ><a href="#beta">{copy.nav.beta}</a>
+      </nav>
+      <nav class="language-nav" aria-label={copy.nav.language}>
+        {
+          LOCALES.map((language) => (
+            <a
+              href={localePath(language, base)}
+              lang={language === 'pt' ? 'pt-BR' : language}
+              aria-current={language === locale ? 'page' : undefined}
+            >
+              {LANGUAGE_NAMES[language]}
+            </a>
+          ))
+        }
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            {copy.hero.first}<br /><span>{copy.hero.second}</span>
+          </h1>
+          <p class="hero-body">{copy.hero.body}</p>
+          <a class="button" data-beta href={SITE.beta}
+            >{copy.hero.action}<Arrow /></a
+          >
+          <p class="availability">{copy.hero.note}</p>
+        </div>
+        <figure class="hero-screens">
+          <img
+            class="hero-calendar screen"
+            src={`${base}screens/${locale}-calendar.webp`}
+            width="620"
+            height="1348"
+            alt={copy.features[1].alt}
+            loading="eager"
+          />
+          <img
+            class="hero-today screen"
+            src={`${base}screens/${locale}-today.webp`}
+            width="620"
+            height="1348"
+            alt={copy.features[0].alt}
+            fetchpriority="high"
+          />
+          <figcaption>{copy.example}</figcaption>
+        </figure>
+      </section>
+      <div class="cycle-divider wrap" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <section
+        id="features"
+        class="features wrap"
+        aria-labelledby="features-title"
+      >
+        <div class="section-intro">
+          <h2 id="features-title">{copy.intro.title}</h2><p>
+            {copy.intro.body}
+          </p>
+        </div>
+        {
+          copy.features.map((feature, index) => (
+            <FeatureSection
+              feature={feature}
+              index={index}
+              base={base}
+              locale={locale}
+              example={copy.example}
+              observations={copy.observations}
+            />
+          ))
+        }
+      </section>
+      <section id="methods" class="methods" aria-labelledby="methods-title">
+        <div class="wrap">
+          <div class="methods-intro">
+            <h2 id="methods-title">{copy.methods.title}</h2><p>
+              {copy.methods.body}
+            </p>
+          </div>
+          <div class="method-pair">
+            <article>
+              <h3>{copy.methods.calendar}</h3><p>{copy.methods.calendarBody}</p>
+            </article><article>
+              <h3>{copy.methods.symptothermal}</h3><p>
+                {copy.methods.symptothermalBody}
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="beta" class="beta wrap" aria-labelledby="beta-title">
+        <div class="section-intro">
+          <h2 id="beta-title">{copy.beta.title}</h2><p>{copy.beta.body}</p>
+        </div>
+        <ol class="beta-steps">
+          {copy.beta.steps.map((step) => <li>{step}</li>)}
+        </ol>
+        <a class="button" data-beta href={SITE.beta}
+          >{copy.hero.action}<Arrow /></a
+        >
+        <p class="beta-note">{copy.beta.note}</p>
+      </section>
+      <section class="faq wrap" aria-labelledby="faq-title">
+        <h2 id="faq-title">{copy.faqTitle}</h2>
+        <div class="questions">
+          {
+            copy.faq.map((item) => (
+              <details>
+                <>
+                  <summary>
+                    {item.question}
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M5 12h14M12 5v14"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </summary>
+                  <p>{item.answer}</p>
+                </>
+              </details>
+            ))
+          }
+        </div>
+      </section>
+      <aside class="disclaimer wrap" aria-labelledby="disclaimer-title">
+        <h2 id="disclaimer-title">{copy.disclaimerTitle}</h2><p>
+          {copy.disclaimer}
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="wordmark" href={localePath(locale, base)}
+        ><img src={`${base}icon.png`} width="32" height="32" alt="" />Cecilia</a
+      ><p>{copy.footer}</p><span>© {new Date().getFullYear()} Cecilia</span>
+    </footer>
+  </body>
+</html>
