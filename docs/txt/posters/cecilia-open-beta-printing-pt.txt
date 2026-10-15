@@ -1,0 +1,27 @@
+CECILIA - BETA ABERTA PARA iOS
+POSTERS EM PORTUGUÊS DO BRASIL
+
+Tamanhos finais, sempre em orientação retrato:
+- A3: 297 x 420 mm
+- A2: 420 x 594 mm
+- A1: 594 x 841 mm
+- A0: 841 x 1189 mm
+- 2A0: 1189 x 1682 mm
+- 4A0: 1682 x 2378 mm
+
+COMO IMPRIMIR
+1. Escolha o PDF correspondente ao tamanho de papel desejado.
+2. Imprima em "Tamanho real" ou 100%, em orientação retrato.
+3. Preserve as proporções; não estique nem corte a área do QR code.
+4. Confira o QR code com um celular antes de imprimir um lote.
+
+Os PDFs têm o tamanho final indicado, sem sangria ou marcas de corte.
+Texto, logotipo e QR code são vetoriais. As telas do aplicativo são
+imagens ilustrativas e podem ficar mais suaves de perto nos maiores formatos.
+O conjunto usa as mesmas cores RGB e o mesmo desenho do poster aprovado.
+
+Destino exato do QR code: https://mariacecilia.app/
+O site orienta a instalação da beta aberta para iOS pelo TestFlight.
+
+Referência das dimensões:
+https://www.adobe.com/uk/creativecloud/design/discover/guide-paper-sizes.html

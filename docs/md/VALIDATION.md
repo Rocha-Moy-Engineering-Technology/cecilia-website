@@ -41,7 +41,7 @@ timeout 60s uv run --group dev pytest --cov=context_supervised_hooks.spec --cov-
 
 ## Publication status
 
-The public repository exists and GitHub Pages is configured with build_type workflow and HTTPS enforced. The user published the website implementation at e033c22. Its first Actions run was rejected before jobs started because runner.temp was used in job-level env. The corrected workflow now defines the screenshot directory at step level, where that context is available. The TestFlight installation clarification is also prepared locally. Publication verification remains pending until the corrected revision reaches main and a deployment succeeds.
+Verified live on October 12, 2026. Revision `5167b70d27503f06de6edbd445bed4da5b73be1d` completed both build and deploy successfully in [GitHub Actions](https://github.com/Rocha-Moy-Engineering-Technology/cecilia-website/actions/runs/38274362335). The [public website](https://rocha-moy-engineering-technology.github.io/cecilia-website/), all three localized pages, and localized example images return HTTP 200. Each language includes the updated TestFlight installation guidance and the approved invitation link. GitHub Pages uses workflow builds and enforces HTTPS.
 
 ## TestFlight instruction follow-up
 

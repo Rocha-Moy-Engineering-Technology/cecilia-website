@@ -7,7 +7,7 @@ export const LANGUAGE_NAMES = {
   pt: 'Português',
 } as const;
 export const SITE = {
-  origin: 'https://rocha-moy-engineering-technology.github.io',
-  base: '/cecilia-website/',
+  origin: 'https://mariacecilia.app',
+  base: '/',
   beta: 'https://testflight.apple.com/join/rfAGkcSr',
 } as const;

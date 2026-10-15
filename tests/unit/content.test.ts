@@ -21,6 +21,9 @@ describe('complete localized product content (A1.1)', () => {
   });
   test('defines the approved beta destination once (A1.4)', () => {
     expect(SITE.beta).toBe('https://testflight.apple.com/join/rfAGkcSr');
-    expect(SITE.base).toBe('/cecilia-website/');
+  });
+  test('serves the custom domain at its root (A1.3)', () => {
+    expect(SITE.origin).toBe('https://mariacecilia.app');
+    expect(SITE.base).toBe('/');
   });
 });

@@ -21,6 +21,7 @@ test('A1.3/A1.5 production static routes, metadata, and assets resolve', async (
     expect(await sitemap.text()).toContain(`${SITE.origin}${SITE.base}es/`);
     const missing = await request.get(`${baseURL}/missing-page/`);
     expect(missing.status()).toBe(404);
+    expect(await missing.text()).toContain('Page not found');
     for (const locale of ['en', 'es', 'pt']) {
       for (const screen of ['today', 'calendar', 'chart']) {
         const image = await request.get(

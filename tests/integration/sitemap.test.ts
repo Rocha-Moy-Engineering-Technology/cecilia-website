@@ -6,8 +6,6 @@ test('sitemap adapter exposes every stable locale URL (A1.3)', async () => {
   expect(response.headers.get('content-type')).toBe('application/xml');
   const xml = await response.text();
   for (const locale of ['en', 'es', 'pt']) {
-    expect(xml).toContain(
-      `https://rocha-moy-engineering-technology.github.io/cecilia-website/${locale}/`
-    );
+    expect(xml).toContain(`https://mariacecilia.app/${locale}/`);
   }
 });

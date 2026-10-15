@@ -1,4 +1,4 @@
-name: Validate and publish website
+name: Validate website
 
 on:
   pull_request:
@@ -17,7 +17,6 @@ jobs:
   build:
     permissions:
       contents: read
-      pages: read
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -31,26 +30,3 @@ jobs:
       - run: npm run test:generated
         env:
           ASTRO_SCREENSHOT_DIR: ${{ runner.temp }}/cecilia-website-evidence
-      - name: Configure Pages
-        if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v5
-      - name: Upload static website
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
-  deploy:
-    if: github.event_name != 'pull_request'
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Publish
-        id: deployment
-        uses: actions/deploy-pages@v4
