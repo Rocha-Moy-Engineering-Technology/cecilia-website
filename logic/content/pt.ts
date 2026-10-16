@@ -9,14 +9,14 @@ export const pt: ProductContent = {
   nav: {
     features: 'O aplicativo',
     methods: 'Os métodos',
-    beta: 'Experimente',
+    beta: 'Conheça',
     language: 'Escolha o idioma',
   },
   hero: {
     first: 'Seu ciclo.',
     second: 'Seus planos.',
     body: 'Para quem quer engravidar e para quem busca planejamento familiar.',
-    action: 'Experimente a Cecilia',
+    action: 'Conheça a Cecilia',
     note: 'Para iOS · Primeiro, instale o TestFlight, o aplicativo da Apple para testar apps. Depois, volte aqui e toque neste botão novamente para instalar a Cecilia.',
   },
   example: 'Telas de exemplo · Dados ilustrativos de ciclo',
@@ -82,8 +82,8 @@ export const pt: ProductContent = {
     title: 'Conheça a Cecilia.',
     body: 'A Cecilia está em fase de testes e você pode participar. Instale pelo TestFlight e comece a acompanhar seu ciclo.',
     steps: [
-      'Toque em “Experimente a Cecilia” e instale o TestFlight, se solicitado.',
-      'Após instalar o TestFlight, volte a esta página e toque em “Experimente a Cecilia” novamente para instalar a Cecilia.',
+      'Toque em “Conheça a Cecilia” e instale o TestFlight, se solicitado.',
+      'Após instalar o TestFlight, volte a esta página e toque em “Conheça a Cecilia” novamente para instalar a Cecilia.',
       'Entre na sua conta, escolha seu objetivo, configure seu perfil e comece a registrar seus sinais.',
     ],
     note: 'Esta é uma versão de teste. As funcionalidades e a experiência podem mudar à medida que o aplicativo evolui.',
