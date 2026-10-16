@@ -40,4 +40,6 @@ Readable contrast, keyboard navigation, semantic landmarks, descriptive image al
 
 ## Public invitation language
 
-Use “Conheça a Cecilia” and “versão de teste” in Brazilian Portuguese, “Try Cecilia” and “test version” in English, and “Prueba Cecilia” and “versión de prueba” in Spanish. Explain TestFlight as Apple’s app for testing apps. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
+Use “Conheça a Cecilia” and “versão de teste” in Brazilian Portuguese, “Meet Cecilia” and “test version” in English, and “Conoce a Cecilia” and “versión de prueba” in Spanish. Explain TestFlight as Apple’s app for testing apps. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
+
+Keep each invitation aligned across navigation, headings, buttons, installation instructions, and marketing artifacts whenever one language changes.

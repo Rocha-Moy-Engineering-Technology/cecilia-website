@@ -9,14 +9,14 @@ export const en: ProductContent = {
   nav: {
     features: 'The app',
     methods: 'The methods',
-    beta: 'Try it',
+    beta: 'Meet Cecilia',
     language: 'Choose language',
   },
   hero: {
     first: 'Your cycle.',
     second: 'Your plans.',
     body: 'For people trying to conceive and people planning their families.',
-    action: 'Try Cecilia',
+    action: 'Meet Cecilia',
     note: 'For iOS · First, install TestFlight, Apple’s app for testing apps. Then return here and tap this button again to install Cecilia.',
   },
   example: 'Example screens · Illustrative cycle data',
@@ -79,11 +79,11 @@ export const en: ProductContent = {
       'Combines cycle timing with cervical mucus and temperature signs. It waits for both the temperature shift and mucus peak rules before confirming the post-ovulation phase.',
   },
   beta: {
-    title: 'Get to know Cecilia.',
+    title: 'Meet Cecilia.',
     body: 'Cecilia is being tested, and you can take part. Install it through TestFlight and start tracking your cycle.',
     steps: [
-      'Tap “Try Cecilia” and install TestFlight if prompted.',
-      'After installing TestFlight, return to this page and tap “Try Cecilia” again to install Cecilia.',
+      'Tap “Meet Cecilia” and install TestFlight if prompted.',
+      'After installing TestFlight, return to this page and tap “Meet Cecilia” again to install Cecilia.',
       'Sign in, choose your goal, set up your profile, and start recording your signs.',
     ],
     note: 'This is a test version. Features and the experience may change as the app develops.',
