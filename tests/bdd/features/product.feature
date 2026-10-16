@@ -4,6 +4,7 @@ Feature: Cecilia product website
   Scenario Outline: CECILIA-WEB-BDD-001 visitors understand the app and join the beta
     Given I open the product page in "<locale>"
     Then the cycle features and example screens are available
+    And both reproductive goals and forecast limitations are visible
     And every beta button opens Cecilia's TestFlight invitation
     When I open the first frequently asked question
     Then its answer is visible

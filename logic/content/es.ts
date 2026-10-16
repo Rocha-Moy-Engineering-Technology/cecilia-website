@@ -2,24 +2,46 @@ import type { ProductContent } from '../../types/site';
 
 export const es: ProductContent = {
   language: 'es',
-  title: 'Cecilia — Conoce tu ciclo',
+  title: 'Cecilia — Tu ciclo. Tus planes.',
   description:
-    'Conoce tu ciclo y tus signos de fertilidad con Cecilia. Orientación diaria, registro del ciclo, calendario y gráficas de temperatura. Únete a la beta para iOS.',
+    'Para quienes quieren concebir y para quienes buscan planificación familiar. Registra tus señales, la ventana fértil estimada y tu ciclo. Conoce la versión de prueba para iOS.',
   skip: 'Ir al contenido',
   nav: {
     features: 'La app',
     methods: 'Los métodos',
-    beta: 'Únete a la beta',
+    beta: 'Pruébala',
     language: 'Elige el idioma',
   },
   hero: {
     first: 'Tu ciclo.',
-    second: 'Más claridad, cada día.',
-    body: 'Un poco más de comprensión, día a día. Cecilia reúne tu ciclo y tus signos de fertilidad para ayudarte a entender lo que significan hoy.',
-    action: 'Únete a la beta abierta',
-    note: 'Para iOS · Si aún no tienes TestFlight, instálalo primero. Después, vuelve aquí y toca este botón otra vez para instalar Cecilia.',
+    second: 'Tus planes.',
+    body: 'Para quienes quieren concebir y para quienes buscan planificación familiar.',
+    action: 'Prueba Cecilia',
+    note: 'Para iOS · Primero, instala TestFlight, la app de Apple para probar aplicaciones. Después, vuelve aquí y toca este botón otra vez para instalar Cecilia.',
   },
   example: 'Pantallas de ejemplo · Datos ilustrativos del ciclo',
+  goals: {
+    title: 'Un ciclo. Dos objetivos.',
+    change:
+      'Elige tu objetivo al empezar y cámbialo cuando quieras en Ajustes. Las mismas señales y predicciones, con orientación para tus planes.',
+    limit:
+      'Las predicciones son estimaciones; ningún día garantiza seguridad. Aprende el método con un profesional cualificado. Cecilia no sustituye la anticoncepción ni protege frente a las ITS.',
+    source: 'Conoce las precauciones de estos métodos (NHS, en inglés).',
+    items: [
+      {
+        id: 'trying_to_conceive',
+        title: 'Quiero quedarme embarazada',
+        body: 'Registrar las señales y la ventana fértil estimada para planificar los intentos.',
+        alt: 'Pantalla Hoy real de Cecilia con el objetivo Quiero quedarme embarazada y datos ilustrativos.',
+      },
+      {
+        id: 'avoiding_pregnancy',
+        title: 'Quiero hacer mi planificación familiar',
+        body: 'Apoyar mi planificación familiar con métodos de percepción de la fertilidad.',
+        alt: 'Pantalla Hoy real de Cecilia con el objetivo Quiero hacer mi planificación familiar y datos ilustrativos.',
+      },
+    ],
+  },
   intro: {
     title: 'Un espacio para conocerte.',
     body: 'Tu ciclo es más que una fecha en el calendario. Registra lo que observas. Identifica patrones. Consulta una visión diaria basada en tu historial y en los signos que registras.',
@@ -58,20 +80,20 @@ export const es: ProductContent = {
   },
   beta: {
     title: 'Conoce a Cecilia.',
-    body: 'La beta abierta para iOS está lista para explorar. Únete a través de Apple TestFlight y comienza con tu propio ciclo.',
+    body: 'Cecilia está en fase de pruebas y puedes participar. Instálala a través de TestFlight y empieza a seguir tu ciclo.',
     steps: [
-      'Toca “Únete a la beta abierta” e instala TestFlight si se te solicita.',
-      'Después de instalar TestFlight, vuelve a esta página y toca “Únete a la beta abierta” otra vez para instalar Cecilia.',
-      'Inicia sesión, configura tu perfil y empieza a registrar tus signos.',
+      'Toca “Prueba Cecilia” e instala TestFlight si se te solicita.',
+      'Después de instalar TestFlight, vuelve a esta página y toca “Prueba Cecilia” otra vez para instalar Cecilia.',
+      'Inicia sesión, elige tu objetivo, configura tu perfil y empieza a registrar tus señales.',
     ],
-    note: 'Esta es una versión beta. Las funciones y la experiencia pueden cambiar a medida que se desarrolla la app.',
+    note: 'Esta es una versión de prueba. Las funciones y la experiencia pueden cambiar a medida que se desarrolla la app.',
   },
   faqTitle: 'Algunas cosas que debes saber.',
   faq: [
     {
       question: '¿Para qué sirve Cecilia?',
       answer:
-        'Cecilia te ayuda a registrar tu ciclo menstrual y tus signos corporales y a entender un pronóstico diario de fertilidad. Reúne orientación diaria, un calendario y gráficas de temperatura en una sola app.',
+        'Cecilia apoya el conocimiento del ciclo para quienes quieren concebir y quienes buscan planificación familiar con métodos de percepción de la fertilidad. Reúne señales, predicciones estimadas, calendario y temperaturas. Los datos insuficientes o la ovulación no confirmada indican incertidumbre, no el mejor momento para concebir.',
     },
     {
       question: '¿Necesito registrar mi temperatura?',
@@ -79,14 +101,14 @@ export const es: ProductContent = {
         'El método del calendario usa las fechas del ciclo. El método sintotérmico también usa la temperatura y el moco cervical para confirmar la fase posterior a la ovulación. Puedes elegir y cambiar tu método en Ajustes.',
     },
     {
-      question: '¿Puedo cambiar mis registros y el idioma?',
+      question: '¿Puedo cambiar mi objetivo, mis registros y el idioma?',
       answer:
-        'Sí. Puedes agregar, editar o borrar las observaciones de hoy y de días pasados. Cecilia está disponible en inglés, español y portugués de Brasil, y puedes cambiar el idioma y la unidad de temperatura en Ajustes.',
+        'Sí. Elige tu objetivo al empezar y cámbialo en Ajustes. El cambio adapta la orientación y conserva tus registros, el método y la predicción. También puedes editar los registros y elegir inglés, español o portugués de Brasil.',
     },
     {
       question: '¿Cecilia garantiza la anticoncepción?',
       answer:
-        'No. Los métodos de conocimiento de la fertilidad pueden fallar y los pronósticos dependen de la información disponible. Consulta a un profesional de la salud sobre tu anticoncepción y tu salud.',
+        'No. Ningún día garantiza seguridad. Las predicciones dependen de los datos disponibles y pueden fallar; no confirman la ovulación ni garantizan un embarazo. Para evitar un embarazo, aprende tu método con un profesional cualificado. La app no protege frente a las ITS.',
     },
   ],
   disclaimerTitle: 'Antes de empezar',

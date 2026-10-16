@@ -105,6 +105,39 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
           <figcaption>{copy.example}</figcaption>
         </figure>
       </section>
+      <section class="goals wrap" aria-labelledby="goals-title">
+        <h2 id="goals-title">{copy.goals.title}</h2>
+        <p class="goal-change">{copy.goals.change}</p>
+        <div class="goal-pair">
+          {
+            copy.goals.items.map((goal) => (
+              <article class="goal" data-goal={goal.id}>
+                <h3>{goal.title}</h3>
+                <p>{goal.body}</p>
+                {goal.id === 'avoiding_pregnancy' && (
+                  <p class="goal-limit">
+                    {copy.goals.limit}{' '}
+                    <a href="https://www.nhs.uk/contraception/methods-of-contraception/natural-family-planning/">
+                      {copy.goals.source}
+                    </a>
+                  </p>
+                )}
+                <figure>
+                  <img
+                    class="screen"
+                    src={`${base}screens/${locale}-${goal.id}.webp`}
+                    width="620"
+                    height="1348"
+                    alt={goal.alt}
+                    loading="lazy"
+                  />
+                  <figcaption>{copy.example}</figcaption>
+                </figure>
+              </article>
+            ))
+          }
+        </div>
+      </section>
       <div class="cycle-divider wrap" aria-hidden="true">
         <i></i><i></i><i></i><i></i><i></i>
       </div>

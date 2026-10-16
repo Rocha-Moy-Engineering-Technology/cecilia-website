@@ -23,6 +23,16 @@ export interface ProductContent {
     note: string;
   };
   example: string;
+  goals: {
+    title: string;
+    change: string;
+    limit: string;
+    source: string;
+    items: [
+      { id: 'trying_to_conceive'; title: string; body: string; alt: string },
+      { id: 'avoiding_pregnancy'; title: string; body: string; alt: string },
+    ];
+  };
   intro: { title: string; body: string };
   features: [Feature, Feature, Feature];
   observations: string;

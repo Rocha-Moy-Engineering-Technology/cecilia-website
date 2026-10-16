@@ -216,6 +216,53 @@ figcaption {
   display: flex;
   gap: 8px;
 }
+.goals {
+  padding-block: 30px 90px;
+}
+.goal-change {
+  margin-top: 18px;
+  color: var(--muted);
+  max-width: 70ch;
+}
+.goal-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+  margin-top: 48px;
+}
+.goal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.goal h3 {
+  color: var(--plum);
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+}
+.goal > p {
+  max-width: 65ch;
+}
+.goal .goal-limit {
+  font-size: 14px;
+  color: var(--muted);
+}
+.goal figure {
+  margin-top: auto;
+  padding-top: 20px;
+}
+.goal .screen {
+  width: min(240px, 100%);
+  margin-inline: auto;
+}
+.goal figcaption {
+  margin-top: 18px;
+}
+@media (max-width: 700px) {
+  .goal-pair {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+}
 .cycle-divider i {
   height: 4px;
   flex: 1;

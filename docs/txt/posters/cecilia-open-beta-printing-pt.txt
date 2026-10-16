@@ -1,5 +1,8 @@
-CECILIA - BETA ABERTA PARA iOS
-POSTERS EM PORTUGUÊS DO BRASIL
+CECILIA - VERSÃO DE TESTE PARA iOS
+POSTER COMBINADO EM PORTUGUÊS DO BRASIL
+
+Seu ciclo. Seus planos.
+Para quem quer engravidar e para quem busca planejamento familiar.
 
 Tamanhos finais, sempre em orientação retrato:
 - A3: 297 x 420 mm
@@ -21,7 +24,12 @@ imagens ilustrativas e podem ficar mais suaves de perto nos maiores formatos.
 O conjunto usa as mesmas cores RGB e o mesmo desenho do poster aprovado.
 
 Destino exato do QR code: https://mariacecilia.app/
-O site orienta a instalação da beta aberta para iOS pelo TestFlight.
+O site orienta a instalação da versão de teste para iOS pelo TestFlight.
 
 Referência das dimensões:
 https://www.adobe.com/uk/creativecloud/design/discover/guide-paper-sizes.html
+
+Telas reais do aplicativo com dados ilustrativos dos dois objetivos.
+As previsões são estimativas; nenhum dia é garantia de segurança.
+Aprenda o método com um profissional qualificado. O aplicativo não
+substitui a contracepção nem protege contra ISTs.

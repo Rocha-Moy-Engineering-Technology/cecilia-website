@@ -2,24 +2,46 @@ import type { ProductContent } from '../../types/site';
 
 export const en: ProductContent = {
   language: 'en',
-  title: 'Cecilia — Get to know your cycle',
+  title: 'Cecilia — Your cycle. Your plans.',
   description:
-    'Understand your cycle and fertility signs with Cecilia. Explore daily guidance, cycle logging, a calendar, and temperature charts. Join the iOS open beta.',
+    'For people trying to conceive and people planning their families. Track your signs, estimated fertile window, and cycle. Explore the iOS test version.',
   skip: 'Skip to content',
   nav: {
     features: 'The app',
     methods: 'The methods',
-    beta: 'Join the beta',
+    beta: 'Try it',
     language: 'Choose language',
   },
   hero: {
     first: 'Your cycle.',
-    second: 'A clearer picture.',
-    body: 'A little more understanding, day by day. Cecilia brings your cycle and fertility signs together, so you can see what they mean for today.',
-    action: 'Join the open beta',
-    note: 'For iOS · If TestFlight isn’t installed, install it first. Then return here and tap this button again to install Cecilia.',
+    second: 'Your plans.',
+    body: 'For people trying to conceive and people planning their families.',
+    action: 'Try Cecilia',
+    note: 'For iOS · First, install TestFlight, Apple’s app for testing apps. Then return here and tap this button again to install Cecilia.',
   },
   example: 'Example screens · Illustrative cycle data',
+  goals: {
+    title: 'One cycle. Two goals.',
+    change:
+      'Choose your goal when you start and change it anytime in Settings. The same signs and forecasts, with guidance for your plans.',
+    limit:
+      'Forecasts are estimates; no day is guaranteed safe. Learn the method with a qualified professional. Cecilia does not replace contraception or protect against STIs.',
+    source: 'Read about fertility-awareness precautions (NHS).',
+    items: [
+      {
+        id: 'trying_to_conceive',
+        title: 'I want to conceive',
+        body: 'Track your signs and estimated fertile window to plan your attempts.',
+        alt: 'Real Cecilia Today screen with the I want to conceive goal and illustrative data.',
+      },
+      {
+        id: 'avoiding_pregnancy',
+        title: 'I want to plan my family',
+        body: 'Support my family planning with fertility-awareness methods.',
+        alt: 'Real Cecilia Today screen with the I want to plan my family goal and illustrative data.',
+      },
+    ],
+  },
   intro: {
     title: 'Make room for understanding.',
     body: 'Your cycle is more than a date on a calendar. Record what you notice. See the patterns. Get a daily view grounded in your cycle history and the signs you log.',
@@ -58,20 +80,20 @@ export const en: ProductContent = {
   },
   beta: {
     title: 'Get to know Cecilia.',
-    body: 'The iOS open beta is ready for you to explore. Join through Apple TestFlight and start with your own cycle.',
+    body: 'Cecilia is being tested, and you can take part. Install it through TestFlight and start tracking your cycle.',
     steps: [
-      'Tap “Join the open beta” and install TestFlight if prompted.',
-      'After installing TestFlight, return to this page and tap “Join the open beta” again to install Cecilia.',
-      'Sign in, set up your profile, and start recording your signs.',
+      'Tap “Try Cecilia” and install TestFlight if prompted.',
+      'After installing TestFlight, return to this page and tap “Try Cecilia” again to install Cecilia.',
+      'Sign in, choose your goal, set up your profile, and start recording your signs.',
     ],
-    note: 'This is a beta version. Features and the experience may change as the app develops.',
+    note: 'This is a test version. Features and the experience may change as the app develops.',
   },
   faqTitle: 'A few things to know.',
   faq: [
     {
       question: 'What is Cecilia for?',
       answer:
-        'Cecilia helps you record your menstrual cycle and body signs and understand a daily fertility forecast. It brings daily guidance, a calendar, and temperature charts into one app.',
+        'Cecilia supports cycle awareness for people trying to conceive and people planning their families through fertility-awareness methods. It brings signs, estimated forecasts, a calendar, and temperatures together. Insufficient data or unconfirmed ovulation means uncertainty, not advice about the best time to conceive.',
     },
     {
       question: 'Do I need to track my temperature?',
@@ -79,14 +101,14 @@ export const en: ProductContent = {
         'The calendar method uses cycle timing. The symptothermal method also uses temperature and cervical mucus signs to confirm the post-ovulation phase. You can choose and change your method in Settings.',
     },
     {
-      question: 'Can I change my records and language?',
+      question: 'Can I change my goal, records, and language?',
       answer:
-        'Yes. You can add, edit, or clear observations for today and past days. Cecilia supports English, Spanish, and Brazilian Portuguese, and lets you change your language and temperature unit in Settings.',
+        'Yes. Choose your goal when you start and change it in Settings. Changing it adapts the guidance and keeps your records, method, and forecast. You can also edit records and choose English, Spanish, or Brazilian Portuguese.',
     },
     {
       question: 'Does Cecilia guarantee contraception?',
       answer:
-        'No. Fertility awareness methods can fail, and forecasts depend on the information available. Consult a health professional about contraception and your health.',
+        'No. No day is guaranteed safe. Forecasts depend on available data and can fail; they do not confirm ovulation or guarantee conception. To avoid pregnancy, learn your method with a qualified professional. The app does not protect against STIs.',
     },
   ],
   disclaimerTitle: 'Before you begin',

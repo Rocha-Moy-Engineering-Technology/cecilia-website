@@ -5,6 +5,28 @@ import { test } from '../../support/fixtures';
 import { SITE } from '../../../logic/site';
 
 const { Given, When, Then } = createBdd(test);
+Then(
+  'both reproductive goals and forecast limitations are visible',
+  async ({ page }) => {
+    await expect(page.locator('.goal')).toHaveCount(2);
+    await expect(
+      page.locator('[data-goal="trying_to_conceive"] h3')
+    ).toBeVisible();
+    await expect(
+      page.locator('[data-goal="avoiding_pregnancy"] h3')
+    ).toBeVisible();
+    await expect(
+      page.locator('[data-goal="avoiding_pregnancy"] .goal-limit')
+    ).toBeVisible();
+    for (const img of await page.locator('.goal img').all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect(img).toHaveJSProperty('complete', true);
+      expect(
+        await img.evaluate((element: HTMLImageElement) => element.naturalWidth)
+      ).toBeGreaterThan(0);
+    }
+  }
+);
 Given(
   'I open the product page in {string}',
   async ({ page, siteURL }, locale: string) => {

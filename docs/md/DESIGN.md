@@ -183,6 +183,8 @@ Compact display type becomes `clamp(2.9rem, 10vw, 4.4rem)`, feature titles becom
 
 **The Open Sections Rule.** Separate explanations with space, tonal sections, and thin dividers; use contained surfaces to present the app screenshots.
 
+The two-goal section uses equal columns (70px gap) and equal heading, body, and screenshot treatments. The avoidance explanation includes limitations directly beside it. Columns stack below 700px; illustrative-data captions remain visible. Goal screens cap at 240px wide and retain their native aspect ratio. The headline preserves the existing display type with the second phrase in plum.
+
 ## Elevation & Depth
 
 The page is flat except for app screens. A diffuse screen shadow (`0 20px 55px #44233316`) separates the real interface from cream or tinted figures. The hero pair uses opposing rotations (−6deg and 6deg) and overlap; the feature screenshots remain upright. Text sections, actions, and question rows do not carry shadows.
