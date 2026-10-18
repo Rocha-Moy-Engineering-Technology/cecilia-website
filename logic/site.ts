@@ -9,5 +9,5 @@ export const LANGUAGE_NAMES = {
 export const SITE = {
   origin: 'https://mariacecilia.app',
   base: '/',
-  beta: 'https://testflight.apple.com/join/rfAGkcSr',
+  beta: 'https://testflight.apple.com/join/eztgqFh6',
 } as const;
