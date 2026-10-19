@@ -1,5 +1,15 @@
 # Validation record
 
+## October 18, 2026: friendly invitation to discover Cecilia and the open test
+
+The final poster invitation reads: “Escaneie o QR code e visite nosso site para conhecer melhor a Cecilia e saber como participar do teste aberto.” It communicates both website purposes without describing distribution channels or installation steps. Updated all seven PDFs, the A3 PNG, print instructions, and ZIP. Exact wording, native dimensions, 14 PDF QR decodes, PNG dimensions/QR and ZIP integrity/byte equality pass; surrounding rendered pixels are unchanged. Master and all-size montage were visually reviewed. Website source and deployment remain unchanged.
+
+## October 18, 2026: poster correction
+
+The user clarified that posters should only introduce the website. Removed the test-version badge, platform availability and distribution/install instructions from the master, every print size, and printing notes; the invitation now says “Escaneie o QR code e conheça a Cecilia no site.” The safety wording remains. The website was not changed.
+
+All seven PDFs passed website-only text checks, exact native page dimensions, and QR decoding at both 720px and 1200px. The A3 PNG passed 3508×4961 dimensions and QR decoding; all ZIP entries match the corrected PDFs/instructions. Rendered pixels outside the badge, invitation paragraph and footer regions are unchanged. All sizes were visually reviewed. No software source changed; artifact checks replace unrelated software-suite reruns for this correction.
+
 ## October 18, 2026: web-first testing invitation
 
 The website now opens the deployed web app directly, states that iOS testing is coming soon, and explains that the Firebase Android invitation is being prepared. The user confirmed Android setup remains in progress. No TestFlight link or installation instruction remains in shipping copy.
