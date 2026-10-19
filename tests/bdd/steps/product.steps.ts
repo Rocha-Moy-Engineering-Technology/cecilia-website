@@ -44,12 +44,15 @@ Then(
   }
 );
 Then(
-  "every beta button opens Cecilia's TestFlight invitation",
+  'the web app is available and mobile testing availability is clear',
   async ({ page }) => {
-    const links = page.locator('[data-beta]');
+    const links = page.locator('[data-web-app]');
     await expect(links).toHaveCount(2);
     for (const link of await links.all())
-      await expect(link).toHaveAttribute('href', SITE.beta);
+      await expect(link).toHaveAttribute('href', SITE.webApp);
+    await expect(page.locator('[data-ios-soon]')).toContainText('iOS');
+    await expect(page.locator('[data-android-pending]')).toBeVisible();
+    await expect(page.locator('[href*="testflight"]')).toHaveCount(0);
   }
 );
 When('I open the first frequently asked question', async ({ page }) => {

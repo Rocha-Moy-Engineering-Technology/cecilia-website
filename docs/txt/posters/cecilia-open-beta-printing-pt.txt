@@ -1,4 +1,4 @@
-CECILIA - VERSÃO DE TESTE PARA iOS
+CECILIA - VERSÃO DE TESTE NO NAVEGADOR
 POSTER COMBINADO EM PORTUGUÊS DO BRASIL
 
 Seu ciclo. Seus planos.
@@ -24,7 +24,9 @@ imagens ilustrativas e podem ficar mais suaves de perto nos maiores formatos.
 O conjunto usa as mesmas cores RGB e o mesmo desenho do poster aprovado.
 
 Destino exato do QR code: https://mariacecilia.app/
-O site orienta a instalação da versão de teste para iOS pelo TestFlight.
+O site abre o app web, sem instalação. A versão mobile para Android será
+distribuída pelo Firebase App Distribution; o convite está em preparação.
+Testes no iOS estarão disponíveis em breve.
 
 Referência das dimensões:
 https://www.adobe.com/uk/creativecloud/design/discover/guide-paper-sizes.html

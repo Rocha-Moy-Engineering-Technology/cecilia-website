@@ -174,7 +174,8 @@ h1 span {
   flex-shrink: 0;
 }
 .availability {
-  font-size: 12px;
+  max-width: 48ch;
+  font-size: 14px;
   color: var(--muted);
   margin-top: 15px;
 }
@@ -380,29 +381,43 @@ h3 {
 .beta {
   padding-block: 100px;
 }
-.beta-steps {
+.access-options {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
-  padding: 0;
-  margin-block: 52px 40px;
-  list-style: none;
-  counter-reset: steps;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+  margin-block: 44px 32px;
 }
-.beta-steps li {
-  counter-increment: steps;
-  font-size: 17px;
-  line-height: 1.6;
-}
-.beta-steps li::before {
-  content: counter(steps);
-  display: block;
-  color: var(--plum);
-  font-weight: 800;
-  font-size: 30px;
-  margin-bottom: 14px;
+.access-options article {
   border-top: 1px solid var(--line);
-  padding-top: 20px;
+  padding-top: 26px;
+}
+.access-options h3 {
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.access-options p {
+  max-width: 48ch;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 17px;
+}
+.access-options .button {
+  margin-top: 24px;
+}
+.access-options .access-pending {
+  color: var(--plum);
+  font-weight: 700;
+}
+.access-setup,
+.ios-note {
+  max-width: 70ch;
+  font-size: 16px;
+}
+.ios-note {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  color: var(--muted);
 }
 .beta-note {
   font-size: 13px;
@@ -633,22 +648,13 @@ h3 {
   .beta {
     padding-block: 64px;
   }
-  .beta-steps {
+  .access-options {
     grid-template-columns: 1fr;
-    gap: 22px;
-    margin-block: 30px;
+    gap: 32px;
+    margin-block: 32px;
   }
-  .beta-steps li {
-    display: grid;
-    grid-template-columns: 32px 1fr;
-    gap: 15px;
+  .access-options p {
     font-size: 16px;
-  }
-  .beta-steps li::before {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
   }
   .faq {
     padding-block: 50px 60px;

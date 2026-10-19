@@ -1,11 +1,11 @@
 Feature: Cecilia product website
   # Acceptance criteria in SDOC FEATURE_SPECS A1.1-A1.5.
 
-  Scenario Outline: CECILIA-WEB-BDD-001 visitors understand the app and join the beta
+  Scenario Outline: CECILIA-WEB-BDD-001 visitors understand the app and find current testing options
     Given I open the product page in "<locale>"
     Then the cycle features and example screens are available
     And both reproductive goals and forecast limitations are visible
-    And every beta button opens Cecilia's TestFlight invitation
+    And the web app is available and mobile testing availability is clear
     When I open the first frequently asked question
     Then its answer is visible
     When I follow the features navigation link

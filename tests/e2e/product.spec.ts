@@ -94,15 +94,15 @@ test('A1.2/A1.3 explicit locales are preserved and English works without JavaScr
   });
 });
 
-test('A1.4 the primary action navigates to the approved beta invitation', async ({
+test('A1.4 the primary action opens the deployed web app without installation', async ({
   page,
 }) => {
   await withRuntime(async ({ baseURL }) => {
-    await page.route(SITE.beta, (route) =>
-      route.fulfill({ body: 'TestFlight invitation' })
+    await page.route(SITE.webApp, (route) =>
+      route.fulfill({ body: 'Cecilia web app' })
     );
     await page.goto(`${baseURL}/en/`);
-    await page.locator('[data-beta]').first().click();
-    await expect(page).toHaveURL(SITE.beta);
+    await page.locator('[data-web-app]').first().click();
+    await expect(page).toHaveURL(SITE.webApp);
   });
 });

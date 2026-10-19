@@ -4,7 +4,7 @@ export const en: ProductContent = {
   language: 'en',
   title: 'Cecilia — Your cycle. Your plans.',
   description:
-    'For people trying to conceive and people planning their families. Track your signs, estimated fertile window, and cycle. Explore the iOS test version.',
+    'For people trying to conceive and people planning their families. Track your signs, estimated fertile window, and cycle. Meet Cecilia in your browser.',
   skip: 'Skip to content',
   nav: {
     features: 'The app',
@@ -16,8 +16,8 @@ export const en: ProductContent = {
     first: 'Your cycle.',
     second: 'Your plans.',
     body: 'For people trying to conceive and people planning their families.',
-    action: 'Meet Cecilia',
-    note: 'For iOS · First, install TestFlight, Apple’s app for testing apps. Then return here and tap this button again to install Cecilia.',
+    action: 'Open the web app',
+    note: 'Use in your browser, with no installation. iOS testing available soon.',
   },
   example: 'Example screens · Illustrative cycle data',
   goals: {
@@ -80,12 +80,16 @@ export const en: ProductContent = {
   },
   beta: {
     title: 'Meet Cecilia.',
-    body: 'Cecilia is being tested, and you can take part. Install it through TestFlight and start tracking your cycle.',
-    steps: [
-      'Tap “Meet Cecilia” and install TestFlight if prompted.',
-      'After installing TestFlight, return to this page and tap “Meet Cecilia” again to install Cecilia.',
-      'Sign in, choose your goal, set up your profile, and start recording your signs.',
-    ],
+    body: 'Start with the web app. The test version opens directly in your phone or computer browser.',
+    webTitle: 'In your browser',
+    webBody: 'Open Cecilia now, with nothing to download or install.',
+    androidTitle: 'Android',
+    androidBody:
+      'Mobile testing will use Firebase App Distribution. We’re preparing the invitation to download the app.',
+    androidPending: 'Android invitation coming soon',
+    setup:
+      'Once you sign in, choose your goal, set up your profile, and start logging your signs.',
+    ios: 'iOS testing will be available soon. Meanwhile, use the web app on your iPhone or iPad.',
     note: 'This is a test version. Features and the experience may change as the app develops.',
   },
   faqTitle: 'A few things to know.',

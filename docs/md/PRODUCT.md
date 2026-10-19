@@ -12,11 +12,11 @@ Astro static and TypeScript, approved by the user. Cloudflare Pages hosts mariac
 
 ## Users
 
-People trying to conceive and people seeking to avoid pregnancy through fertility awareness, including visitors to the iOS open beta.
+People trying to conceive and people seeking to avoid pregnancy through fertility awareness, including visitors testing the web app and future mobile versions.
 
 ## Product Purpose
 
-Explain the app's existing objective and features, then help visitors join its iOS TestFlight open beta.
+Explain the app's existing objective and features, then help visitors open the deployed web app. Android testing will use Firebase App Distribution; its invitation is being prepared. iOS testing will be available soon.
 
 ## Capabilities and Constraints
 
@@ -32,7 +32,7 @@ The user approved extending the app's cream/plum identity, five-color cycle-ring
 
 ## Evidence on Hand
 
-Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The public TestFlight invitation is approved and verified.
+Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The deployed web app address is verified. Android setup is still in progress; no Android invitation is available yet.
 
 ## Accessibility & Inclusion
 
@@ -40,6 +40,6 @@ Readable contrast, keyboard navigation, semantic landmarks, descriptive image al
 
 ## Public invitation language
 
-Use “Conheça a Cecilia” and “versão de teste” in Brazilian Portuguese, “Meet Cecilia” and “test version” in English, and “Conoce a Cecilia” and “versión de prueba” in Spanish. Explain TestFlight as Apple’s app for testing apps. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
+Use “Conheça a Cecilia” and “versão de teste” in Brazilian Portuguese, “Meet Cecilia” and “test version” in English, and “Conoce a Cecilia” and “versión de prueba” in Spanish. Use explicit web-opening labels for actions. Keep Android availability truthful until its Firebase invitation is verified, and explain that iOS testing is coming soon. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
 
 Keep each invitation aligned across navigation, headings, buttons, installation instructions, and marketing artifacts whenever one language changes.

@@ -1,5 +1,22 @@
 # Validation record
 
+## October 18, 2026: web-first testing invitation
+
+The website now opens the deployed web app directly, states that iOS testing is coming soon, and explains that the Firebase Android invitation is being prepared. The user confirmed Android setup remains in progress. No TestFlight link or installation instruction remains in shipping copy.
+
+- `./sh/validate.sh github-pages` passed: 23 unit, 2 adapter integration, 4 behavior, 9 browser, and 1 smoke test (39 total).
+- `npm run test:coverage`: 100% lines, statements, branches, and functions. The full unit run took 606 milliseconds, including coverage instrumentation.
+- `npx eslint logic state types astro.config.mjs --rule 'complexity:[error,0]' --format json`: highest measured complexity in the touched component is 3; the diagnostic deliberately exits 1, while the enforcing lint gate passed.
+- All three languages passed 1440px/390px accessibility, keyboard, overflow, asset, and runtime checks. Twelve refreshed closed/expanded FAQ screenshots live in the evidence gallery.
+- The completed product component passed the Impeccable detector with no findings. Existing cream/plum identity, real app screenshots, goals, and safety wording were preserved.
+- Poster master, six native print PDFs, A3 PNG, instructions, and ZIP were updated. Seven page sizes, 14 PDF QR decodes at 720px/1200px, A3 PNG dimensions/QR, and ZIP integrity/byte equality passed; all print variants were visually reviewed. The QR still opens https://mariacecilia.app/.
+
+Production publication succeeded on October 18, 2026 at https://8cf55b02.mariacecilia-4i7.pages.dev, serving https://mariacecilia.app/. All 47 hosted files matched the validated build byte for byte. Live browser checks passed all three languages at desktop/mobile sizes, keyboard navigation, expandable questions, image loading, availability notices, the actual web-app action, and absence of injected analytics. Missing paths return 404; the www redirect preserves path and query.
+
+The dated record below describes earlier checks and publication history.
+
+## Historical record
+
 Verified on October 12, 2026, using the current local production build.
 
 ## Results

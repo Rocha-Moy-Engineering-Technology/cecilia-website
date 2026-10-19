@@ -4,7 +4,7 @@ export const es: ProductContent = {
   language: 'es',
   title: 'Cecilia — Tu ciclo. Tus planes.',
   description:
-    'Para quienes quieren concebir y para quienes buscan planificación familiar. Registra tus señales, la ventana fértil estimada y tu ciclo. Conoce la versión de prueba para iOS.',
+    'Para quienes quieren concebir y para quienes buscan planificación familiar. Registra tus señales, la ventana fértil estimada y tu ciclo. Conoce a Cecilia en tu navegador.',
   skip: 'Ir al contenido',
   nav: {
     features: 'La app',
@@ -16,8 +16,8 @@ export const es: ProductContent = {
     first: 'Tu ciclo.',
     second: 'Tus planes.',
     body: 'Para quienes quieren concebir y para quienes buscan planificación familiar.',
-    action: 'Conoce a Cecilia',
-    note: 'Para iOS · Primero, instala TestFlight, la app de Apple para probar aplicaciones. Después, vuelve aquí y toca este botón otra vez para instalar Cecilia.',
+    action: 'Abrir la app web',
+    note: 'Úsala en el navegador, sin instalar. Pruebas en iOS próximamente.',
   },
   example: 'Pantallas de ejemplo · Datos ilustrativos del ciclo',
   goals: {
@@ -80,12 +80,16 @@ export const es: ProductContent = {
   },
   beta: {
     title: 'Conoce a Cecilia.',
-    body: 'Cecilia está en fase de pruebas y puedes participar. Instálala a través de TestFlight y empieza a seguir tu ciclo.',
-    steps: [
-      'Toca “Conoce a Cecilia” e instala TestFlight si se te solicita.',
-      'Después de instalar TestFlight, vuelve a esta página y toca “Conoce a Cecilia” otra vez para instalar Cecilia.',
-      'Inicia sesión, elige tu objetivo, configura tu perfil y empieza a registrar tus señales.',
-    ],
+    body: 'Empieza con la app web. La versión de prueba abre directamente en el navegador de tu celular o computadora.',
+    webTitle: 'En tu navegador',
+    webBody: 'Abre Cecilia ahora, sin descargar ni instalar una aplicación.',
+    androidTitle: 'Android',
+    androidBody:
+      'Las pruebas de la versión móvil serán a través de Firebase App Distribution. Estamos preparando la invitación para descargar la app.',
+    androidPending: 'Invitación para Android próximamente',
+    setup:
+      'Al iniciar sesión, elige tu objetivo, configura tu perfil y empieza a registrar tus señales.',
+    ios: 'Las pruebas en iOS estarán disponibles pronto. Mientras tanto, usa la app web en tu iPhone o iPad.',
     note: 'Esta es una versión de prueba. Las funciones y la experiencia pueden cambiar a medida que se desarrolla la app.',
   },
   faqTitle: 'Algunas cosas que debes saber.',

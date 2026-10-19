@@ -4,7 +4,7 @@ export const pt: ProductContent = {
   language: 'pt-BR',
   title: 'Cecilia — Seu ciclo. Seus planos.',
   description:
-    'Para quem quer engravidar e para quem busca planejamento familiar. Acompanhe seus sinais, a janela fértil estimada e seu ciclo. Conheça a versão de teste para iOS.',
+    'Para quem quer engravidar e para quem busca planejamento familiar. Acompanhe seus sinais, a janela fértil estimada e seu ciclo. Conheça a Cecilia no navegador.',
   skip: 'Ir para o conteúdo',
   nav: {
     features: 'O aplicativo',
@@ -16,8 +16,8 @@ export const pt: ProductContent = {
     first: 'Seu ciclo.',
     second: 'Seus planos.',
     body: 'Para quem quer engravidar e para quem busca planejamento familiar.',
-    action: 'Conheça a Cecilia',
-    note: 'Para iOS · Primeiro, instale o TestFlight, o aplicativo da Apple para testar apps. Depois, volte aqui e toque neste botão novamente para instalar a Cecilia.',
+    action: 'Abrir o app web',
+    note: 'Use no navegador, sem instalar. Testes no iOS em breve.',
   },
   example: 'Telas de exemplo · Dados ilustrativos de ciclo',
   goals: {
@@ -80,12 +80,16 @@ export const pt: ProductContent = {
   },
   beta: {
     title: 'Conheça a Cecilia.',
-    body: 'A Cecilia está em fase de testes e você pode participar. Instale pelo TestFlight e comece a acompanhar seu ciclo.',
-    steps: [
-      'Toque em “Conheça a Cecilia” e instale o TestFlight, se solicitado.',
-      'Após instalar o TestFlight, volte a esta página e toque em “Conheça a Cecilia” novamente para instalar a Cecilia.',
-      'Entre na sua conta, escolha seu objetivo, configure seu perfil e comece a registrar seus sinais.',
-    ],
+    body: 'Comece pelo app web. A versão de teste abre direto no navegador do celular ou do computador.',
+    webTitle: 'No navegador',
+    webBody: 'Acesse a Cecilia agora, sem baixar ou instalar um aplicativo.',
+    androidTitle: 'Android',
+    androidBody:
+      'Os testes da versão mobile serão pelo Firebase App Distribution. Estamos preparando o convite para baixar o aplicativo.',
+    androidPending: 'Convite para Android em breve',
+    setup:
+      'Ao entrar, escolha seu objetivo, configure seu perfil e comece a registrar seus sinais.',
+    ios: 'Testes no iOS estarão disponíveis em breve. Enquanto isso, use o app web no seu iPhone ou iPad.',
     note: 'Esta é uma versão de teste. As funcionalidades e a experiência podem mudar à medida que o aplicativo evolui.',
   },
   faqTitle: 'Algumas coisas para saber.',

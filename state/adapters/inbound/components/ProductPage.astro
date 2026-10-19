@@ -80,7 +80,7 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
             {copy.hero.first}<br /><span>{copy.hero.second}</span>
           </h1>
           <p class="hero-body">{copy.hero.body}</p>
-          <a class="button" data-beta href={SITE.beta}
+          <a class="button" data-web-app href={SITE.webApp}
             >{copy.hero.action}<Arrow /></a
           >
           <p class="availability">{copy.hero.note}</p>
@@ -186,12 +186,24 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
         <div class="section-intro">
           <h2 id="beta-title">{copy.beta.title}</h2><p>{copy.beta.body}</p>
         </div>
-        <ol class="beta-steps">
-          {copy.beta.steps.map((step) => <li>{step}</li>)}
-        </ol>
-        <a class="button" data-beta href={SITE.beta}
-          >{copy.hero.action}<Arrow /></a
-        >
+        <div class="access-options">
+          <article>
+            <h3>{copy.beta.webTitle}</h3>
+            <p>{copy.beta.webBody}</p>
+            <a class="button" data-web-app href={SITE.webApp}
+              >{copy.hero.action}<Arrow /></a
+            >
+          </article>
+          <article>
+            <h3>{copy.beta.androidTitle}</h3>
+            <p>{copy.beta.androidBody}</p>
+            <p class="access-pending" data-android-pending>
+              {copy.beta.androidPending}
+            </p>
+          </article>
+        </div>
+        <p class="access-setup">{copy.beta.setup}</p>
+        <p class="ios-note" data-ios-soon>{copy.beta.ios}</p>
         <p class="beta-note">{copy.beta.note}</p>
       </section>
       <section class="faq wrap" aria-labelledby="faq-title">

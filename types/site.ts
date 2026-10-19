@@ -47,7 +47,13 @@ export interface ProductContent {
   beta: {
     title: string;
     body: string;
-    steps: [string, string, string];
+    webTitle: string;
+    webBody: string;
+    androidTitle: string;
+    androidBody: string;
+    androidPending: string;
+    setup: string;
+    ios: string;
     note: string;
   };
   faqTitle: string;

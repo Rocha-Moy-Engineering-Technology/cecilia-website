@@ -43,8 +43,17 @@ describe('complete localized product content (A1.1)', () => {
     expect(content[locale].faq).toHaveLength(4);
     expect(content[locale].disclaimer.length).toBeGreaterThan(100);
   });
-  test('defines the approved beta destination once (A1.4)', () => {
-    expect(SITE.beta).toBe('https://testflight.apple.com/join/eztgqFh6');
+  test('defines the deployed web app destination once (A1.4)', () => {
+    expect(SITE.webApp).toBe('https://cecilia-web-production.up.railway.app/');
+    expect(Object.values(SITE).join(' ')).not.toContain('testflight');
+  });
+  test.each(LOCALES)('%s explains current platform availability', (locale) => {
+    const copy = content[locale];
+    expect(copy.beta.ios).toContain('iOS');
+    expect(copy.beta.androidTitle).toBe('Android');
+    expect(copy.beta.androidBody).toContain('Firebase App Distribution');
+    expect(copy.beta.androidPending.length).toBeGreaterThan(5);
+    expect(JSON.stringify(copy)).not.toContain('TestFlight');
   });
   test('serves the custom domain at its root (A1.3)', () => {
     expect(SITE.origin).toBe('https://mariacecilia.app');
