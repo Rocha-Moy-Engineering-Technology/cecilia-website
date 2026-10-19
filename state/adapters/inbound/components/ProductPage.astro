@@ -79,6 +79,7 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
           <h1 id="hero-title">
             {copy.hero.first}<br /><span>{copy.hero.second}</span>
           </h1>
+          <p class="hero-positioning">{copy.hero.positioning}</p>
           <p class="hero-body">{copy.hero.body}</p>
           <a class="button" data-web-app href={SITE.webApp}
             >{copy.hero.action}<Arrow /></a
@@ -197,9 +198,9 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
           <article>
             <h3>{copy.beta.androidTitle}</h3>
             <p>{copy.beta.androidBody}</p>
-            <p class="access-pending" data-android-pending>
-              {copy.beta.androidPending}
-            </p>
+            <a class="button" data-android-invite href={SITE.androidInvite}
+              >{copy.beta.androidAction}<Arrow /></a
+            >
           </article>
         </div>
         <p class="access-setup">{copy.beta.setup}</p>

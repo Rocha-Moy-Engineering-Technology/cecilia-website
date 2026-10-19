@@ -18,6 +18,7 @@ export interface ProductContent {
   hero: {
     first: string;
     second: string;
+    positioning: string;
     body: string;
     action: string;
     note: string;
@@ -51,7 +52,7 @@ export interface ProductContent {
     webBody: string;
     androidTitle: string;
     androidBody: string;
-    androidPending: string;
+    androidAction: string;
     setup: string;
     ios: string;
     note: string;

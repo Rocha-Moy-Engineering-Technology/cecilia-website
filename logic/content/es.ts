@@ -2,9 +2,9 @@ import type { ProductContent } from '../../types/site';
 
 export const es: ProductContent = {
   language: 'es',
-  title: 'Cecilia — Tu ciclo. Tus planes.',
+  title: 'Cecilia — Una app para mujeres. Tu ciclo. Tus planes.',
   description:
-    'Para quienes quieren concebir y para quienes buscan planificación familiar. Registra tus señales, la ventana fértil estimada y tu ciclo. Conoce a Cecilia en tu navegador.',
+    'Para mujeres que quieren concebir y mujeres que buscan planificación familiar. Registra tus señales, la ventana fértil estimada y tu ciclo. Conoce a Cecilia en tu navegador.',
   skip: 'Ir al contenido',
   nav: {
     features: 'La app',
@@ -15,7 +15,8 @@ export const es: ProductContent = {
   hero: {
     first: 'Tu ciclo.',
     second: 'Tus planes.',
-    body: 'Para quienes quieren concebir y para quienes buscan planificación familiar.',
+    positioning: 'Una app para mujeres.',
+    body: 'Para mujeres que quieren concebir y mujeres que buscan planificación familiar.',
     action: 'Abrir la app web',
     note: 'Úsala en el navegador, sin instalar. Pruebas en iOS próximamente.',
   },
@@ -44,7 +45,7 @@ export const es: ProductContent = {
   },
   intro: {
     title: 'Un espacio para conocerte.',
-    body: 'Tu ciclo es más que una fecha en el calendario. Registra lo que observas. Identifica patrones. Consulta una visión diaria basada en tu historial y en los signos que registras.',
+    body: 'Un espacio para que las mujeres conozcan mejor su ciclo. Registra lo que notas, observa tus patrones y consulta una visión diaria basada en tu historial y las señales que registras.',
   },
   features: [
     {
@@ -80,13 +81,13 @@ export const es: ProductContent = {
   },
   beta: {
     title: 'Conoce a Cecilia.',
-    body: 'Empieza con la app web. La versión de prueba abre directamente en el navegador de tu celular o computadora.',
+    body: 'Elige cómo probar Cecilia: en tu navegador o en la app para Android.',
     webTitle: 'En tu navegador',
     webBody: 'Abre Cecilia ahora, sin descargar ni instalar una aplicación.',
     androidTitle: 'Android',
     androidBody:
-      'Las pruebas de la versión móvil serán a través de Firebase App Distribution. Estamos preparando la invitación para descargar la app.',
-    androidPending: 'Invitación para Android próximamente',
+      'Instala la versión de prueba a través de Firebase App Distribution. Abre la invitación con tu cuenta de Google y sigue las instrucciones en tu celular.',
+    androidAction: 'Probar en Android',
     setup:
       'Al iniciar sesión, elige tu objetivo, configura tu perfil y empieza a registrar tus señales.',
     ios: 'Las pruebas en iOS estarán disponibles pronto. Mientras tanto, usa la app web en tu iPhone o iPad.',
@@ -95,9 +96,9 @@ export const es: ProductContent = {
   faqTitle: 'Algunas cosas que debes saber.',
   faq: [
     {
-      question: '¿Para qué sirve Cecilia?',
+      question: '¿Para quién es Cecilia?',
       answer:
-        'Cecilia apoya el conocimiento del ciclo para quienes quieren concebir y quienes buscan planificación familiar con métodos de percepción de la fertilidad. Reúne señales, predicciones estimadas, calendario y temperaturas. Los datos insuficientes o la ovulación no confirmada indican incertidumbre, no el mejor momento para concebir.',
+        'Cecilia apoya el conocimiento del ciclo para mujeres que quieren concebir y mujeres que buscan planificación familiar con métodos de percepción de la fertilidad. Reúne señales, predicciones estimadas, calendario y temperaturas. Los datos insuficientes o la ovulación no confirmada indican incertidumbre, no el mejor momento para concebir.',
     },
     {
       question: '¿Necesito registrar mi temperatura?',
@@ -118,5 +119,5 @@ export const es: ProductContent = {
   disclaimerTitle: 'Antes de empezar',
   disclaimer:
     'Cecilia no es una garantía anticonceptiva. Los métodos de conocimiento de la fertilidad pueden fallar; por eso, consulta a un profesional de la salud sobre tu anticoncepción y tu salud.',
-  footer: 'Conoce tu ciclo, día a día.',
+  footer: 'Para mujeres. Para tu ciclo y tus planes.',
 };

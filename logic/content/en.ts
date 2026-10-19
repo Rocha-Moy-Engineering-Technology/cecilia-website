@@ -2,9 +2,9 @@ import type { ProductContent } from '../../types/site';
 
 export const en: ProductContent = {
   language: 'en',
-  title: 'Cecilia — Your cycle. Your plans.',
+  title: 'Cecilia — An app for women. Your cycle. Your plans.',
   description:
-    'For people trying to conceive and people planning their families. Track your signs, estimated fertile window, and cycle. Meet Cecilia in your browser.',
+    'For women trying to conceive and women seeking family planning. Track your signs, estimated fertile window, and cycle. Meet Cecilia in your browser.',
   skip: 'Skip to content',
   nav: {
     features: 'The app',
@@ -15,7 +15,8 @@ export const en: ProductContent = {
   hero: {
     first: 'Your cycle.',
     second: 'Your plans.',
-    body: 'For people trying to conceive and people planning their families.',
+    positioning: 'An app for women.',
+    body: 'For women trying to conceive and women seeking family planning.',
     action: 'Open the web app',
     note: 'Use in your browser, with no installation. iOS testing available soon.',
   },
@@ -44,7 +45,7 @@ export const en: ProductContent = {
   },
   intro: {
     title: 'Make room for understanding.',
-    body: 'Your cycle is more than a date on a calendar. Record what you notice. See the patterns. Get a daily view grounded in your cycle history and the signs you log.',
+    body: 'A space for women to understand their cycles. Record what you notice, see your patterns, and get a daily view grounded in your cycle history and the signs you log.',
   },
   features: [
     {
@@ -80,13 +81,13 @@ export const en: ProductContent = {
   },
   beta: {
     title: 'Meet Cecilia.',
-    body: 'Start with the web app. The test version opens directly in your phone or computer browser.',
+    body: 'Choose how to try Cecilia: in your browser or in the Android app.',
     webTitle: 'In your browser',
     webBody: 'Open Cecilia now, with nothing to download or install.',
     androidTitle: 'Android',
     androidBody:
-      'Mobile testing will use Firebase App Distribution. We’re preparing the invitation to download the app.',
-    androidPending: 'Android invitation coming soon',
+      'Install the Android test version through Firebase App Distribution. Open the invitation, sign in with your Google account, and follow the instructions on your phone.',
+    androidAction: 'Join the Android test',
     setup:
       'Once you sign in, choose your goal, set up your profile, and start logging your signs.',
     ios: 'iOS testing will be available soon. Meanwhile, use the web app on your iPhone or iPad.',
@@ -95,9 +96,9 @@ export const en: ProductContent = {
   faqTitle: 'A few things to know.',
   faq: [
     {
-      question: 'What is Cecilia for?',
+      question: 'Who is Cecilia for?',
       answer:
-        'Cecilia supports cycle awareness for people trying to conceive and people planning their families through fertility-awareness methods. It brings signs, estimated forecasts, a calendar, and temperatures together. Insufficient data or unconfirmed ovulation means uncertainty, not advice about the best time to conceive.',
+        'Cecilia supports cycle awareness for women trying to conceive and women seeking family planning through fertility-awareness methods. It brings signs, estimated forecasts, a calendar, and temperatures together. Insufficient data or unconfirmed ovulation means uncertainty, not advice about the best time to conceive.',
     },
     {
       question: 'Do I need to track my temperature?',
@@ -118,5 +119,5 @@ export const en: ProductContent = {
   disclaimerTitle: 'Before you begin',
   disclaimer:
     'Cecilia is not a contraceptive guarantee. Fertility awareness methods can fail, so consult a health professional about your contraception and your health.',
-  footer: 'Cycle awareness, day by day.',
+  footer: 'For women. For your cycle and your plans.',
 };

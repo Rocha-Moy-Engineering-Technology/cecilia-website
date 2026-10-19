@@ -138,6 +138,8 @@ Cecilia pairs a warm cream canvas with plum actions, dark brown text, and the ap
 
 This record describes the implemented website, rather than a proposed redesign. It was extracted from `state/adapters/inbound/styles/global.css`, `state/adapters/inbound/components/`, and the six current English, Spanish, and Portuguese captures at desktop and mobile widths. The user-pinned direction in `docs/md/SURFACE.md` was the visual authority; no approved comp or quality-board comparison was available.
 
+Women are the central marketing audience. A bold app-for-women sentence directly below the hero headline establishes the product definition. The introduction, audience question and footer reinforce it while retaining equal conception and family-planning goals and real interface proof.
+
 **Key Characteristics:**
 
 - Warm cream backgrounds, plum emphasis, and dark brown reading text.
@@ -204,7 +206,7 @@ The original cycle-ring icon remains an image asset. Action arrows and question 
 - **Primary action:** Plum pill with white text, an inline arrow, and generous horizontal padding. Minimum height is (56px), becoming (54px) on compact layouts. Hover deepens the background and expands the text-to-arrow gap from (24px) to (30px). The same component appears in the hero and beta section.
 - **Navigation:** Ordinary text links retain visible hover and keyboard states. Section links use plum and an underline on hover. The selected language uses plum, heavier weight, and an underline. Locale choices remain visible at compact widths.
 - **Screenshot figures:** Today uses rose, Calendar uses sand, and Chart uses sage. Each figure contains an upright real screenshot, a centered example-data caption, and a soft screen shadow. Screen width caps at (264px), becoming (228px) on compact layouts. Figure top padding becomes (28px) at that breakpoint.
-- **Testing options:** Two open columns with top dividers separate the available web app from the pending Android Firebase invitation. Web has a primary action; Android uses a plain plum availability sentence. The profile setup sentence and iOS coming-soon notice follow. Below 760px, options stack with a 32px gap. No disabled or invented download link is shown.
+- **Testing options:** Two open columns with top dividers separate web access from Android Firebase enrollment. Each available option uses the existing primary action component, with installation guidance beside the Android invitation. The profile setup sentence and iOS coming-soon notice follow. Below 760px, options stack with a 32px gap. Only verified destinations are shown.
 - **Frequently asked questions (FAQ):** Native expandable rows use thin bottom dividers, a bold summary, and a plum plus sign that rotates (45deg) when open. Answers have top clearance (12px) and bottom padding (24px).
 - **Wordmark:** The original cycle icon sits beside the plum Cecilia name. Header text is (28px), becoming (25px) on compact layouts; the footer uses (23px).
 
@@ -230,3 +232,5 @@ There are no website input fields, forms, chips, or generic card primitives to d
 - **Don't** use the screenshot surface tints as competing primary action colors.
 - **Don't** crop away app content or the example-data captions to force a fixed composition.
 - **Don't** turn an unused stylesheet declaration into an established design token.
+
+The hero positioning paragraph uses 22px bold text (20px on compact layouts), 24px clearance after the headline and 10px before the audience description. The poster repeats the explicit app-for-women definition in plum bold type above its two-goal audience description.

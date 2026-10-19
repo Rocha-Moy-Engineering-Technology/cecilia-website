@@ -3,9 +3,10 @@ Feature: Cecilia product website
 
   Scenario Outline: CECILIA-WEB-BDD-001 visitors understand the app and find current testing options
     Given I open the product page in "<locale>"
-    Then the cycle features and example screens are available
+    Then Cecilia is clearly presented as an app for women
+    And the cycle features and example screens are available
     And both reproductive goals and forecast limitations are visible
-    And the web app is available and mobile testing availability is clear
+    And the web app and Android invitation are available with iOS testing coming soon
     When I open the first frequently asked question
     Then its answer is visible
     When I follow the features navigation link

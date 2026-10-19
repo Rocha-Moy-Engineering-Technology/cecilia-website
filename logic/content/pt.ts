@@ -2,9 +2,9 @@ import type { ProductContent } from '../../types/site';
 
 export const pt: ProductContent = {
   language: 'pt-BR',
-  title: 'Cecilia — Seu ciclo. Seus planos.',
+  title: 'Cecilia — Um app para mulheres. Seu ciclo. Seus planos.',
   description:
-    'Para quem quer engravidar e para quem busca planejamento familiar. Acompanhe seus sinais, a janela fértil estimada e seu ciclo. Conheça a Cecilia no navegador.',
+    'Para mulheres que querem engravidar e mulheres que buscam planejamento familiar. Acompanhe seus sinais, a janela fértil estimada e seu ciclo. Conheça a Cecilia no navegador.',
   skip: 'Ir para o conteúdo',
   nav: {
     features: 'O aplicativo',
@@ -15,7 +15,8 @@ export const pt: ProductContent = {
   hero: {
     first: 'Seu ciclo.',
     second: 'Seus planos.',
-    body: 'Para quem quer engravidar e para quem busca planejamento familiar.',
+    positioning: 'Um aplicativo para mulheres.',
+    body: 'Para mulheres que querem engravidar e mulheres que buscam planejamento familiar.',
     action: 'Abrir o app web',
     note: 'Use no navegador, sem instalar. Testes no iOS em breve.',
   },
@@ -44,7 +45,7 @@ export const pt: ProductContent = {
   },
   intro: {
     title: 'Um espaço para se conhecer.',
-    body: 'Seu ciclo é mais do que uma data no calendário. Registre o que você percebe. Observe os padrões. Consulte uma visão diária baseada no seu histórico e nos sinais que você registra.',
+    body: 'Um espaço para mulheres conhecerem melhor o próprio ciclo. Registre o que você percebe, observe seus padrões e consulte uma visão diária baseada no seu histórico e nos sinais que você registra.',
   },
   features: [
     {
@@ -80,13 +81,13 @@ export const pt: ProductContent = {
   },
   beta: {
     title: 'Conheça a Cecilia.',
-    body: 'Comece pelo app web. A versão de teste abre direto no navegador do celular ou do computador.',
+    body: 'Escolha como testar a Cecilia: direto no navegador ou no aplicativo para Android.',
     webTitle: 'No navegador',
     webBody: 'Acesse a Cecilia agora, sem baixar ou instalar um aplicativo.',
     androidTitle: 'Android',
     androidBody:
-      'Os testes da versão mobile serão pelo Firebase App Distribution. Estamos preparando o convite para baixar o aplicativo.',
-    androidPending: 'Convite para Android em breve',
+      'Instale a versão de teste pelo Firebase App Distribution. Abra o convite com sua conta Google e siga as instruções no celular.',
+    androidAction: 'Testar no Android',
     setup:
       'Ao entrar, escolha seu objetivo, configure seu perfil e comece a registrar seus sinais.',
     ios: 'Testes no iOS estarão disponíveis em breve. Enquanto isso, use o app web no seu iPhone ou iPad.',
@@ -95,9 +96,9 @@ export const pt: ProductContent = {
   faqTitle: 'Algumas coisas para saber.',
   faq: [
     {
-      question: 'Para que serve a Cecilia?',
+      question: 'Para quem é a Cecilia?',
       answer:
-        'A Cecilia acompanha o ciclo de quem quer engravidar e de quem busca planejamento familiar com métodos de percepção da fertilidade. Ela reúne sinais, previsões estimadas, calendário e temperatura. Dados insuficientes ou ovulação não confirmada são incerteza, não indicação do melhor dia para engravidar.',
+        'A Cecilia acompanha o ciclo de mulheres que querem engravidar e de mulheres que buscam planejamento familiar com métodos de percepção da fertilidade. Ela reúne sinais, previsões estimadas, calendário e temperatura. Dados insuficientes ou ovulação não confirmada são incerteza, não indicação do melhor dia para engravidar.',
     },
     {
       question: 'Preciso registrar minha temperatura?',
@@ -118,5 +119,5 @@ export const pt: ProductContent = {
   disclaimerTitle: 'Antes de começar',
   disclaimer:
     'A Cecilia não é uma garantia contraceptiva. Os métodos de percepção da fertilidade podem falhar; por isso, consulte um profissional de saúde sobre sua contracepção e sua saúde.',
-  footer: 'Conheça seu ciclo, dia após dia.',
+  footer: 'Para mulheres. Para seu ciclo e seus planos.',
 };

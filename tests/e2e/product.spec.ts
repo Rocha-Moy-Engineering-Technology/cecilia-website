@@ -106,3 +106,17 @@ test('A1.4 the primary action opens the deployed web app without installation', 
     await expect(page).toHaveURL(SITE.webApp);
   });
 });
+
+// CECILIA-WEB-BDD-001 / SDOC A1.4: public enrollment, not a tester-only release URL.
+test('A1.4 the Android action opens the public Firebase self-invitation', async ({
+  page,
+}) => {
+  await withRuntime(async ({ baseURL }) => {
+    await page.route(SITE.androidInvite, (route) =>
+      route.fulfill({ body: 'Public Android test enrollment' })
+    );
+    await page.goto(`${baseURL}/pt/`);
+    await page.locator('[data-android-invite]').click();
+    await expect(page).toHaveURL(SITE.androidInvite);
+  });
+});

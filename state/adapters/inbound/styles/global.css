@@ -141,10 +141,16 @@ h1 {
 h1 span {
   color: var(--plum);
 }
+.hero-positioning {
+  margin-top: 24px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 700;
+}
 .hero-body {
   max-width: 39ch;
   font-size: 19px;
-  margin-block: 28px 32px;
+  margin-block: 10px 32px;
   color: var(--muted);
 }
 .button {
@@ -404,10 +410,6 @@ h3 {
 .access-options .button {
   margin-top: 24px;
 }
-.access-options .access-pending {
-  color: var(--plum);
-  font-weight: 700;
-}
 .access-setup,
 .ios-note {
   max-width: 70ch;
@@ -572,9 +574,12 @@ h3 {
   h1 {
     font-size: clamp(2.9rem, 10vw, 4.4rem);
   }
+  .hero-positioning {
+    font-size: 20px;
+  }
   .hero-body {
     font-size: 17px;
-    margin-block: 24px 27px;
+    margin-block: 10px 27px;
   }
   .button {
     font-size: 15px;

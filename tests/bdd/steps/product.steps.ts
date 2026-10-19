@@ -5,6 +5,22 @@ import { test } from '../../support/fixtures';
 import { SITE } from '../../../logic/site';
 
 const { Given, When, Then } = createBdd(test);
+Then('Cecilia is clearly presented as an app for women', async ({ page }) => {
+  const language = await page.locator('html').getAttribute('lang');
+  const audienceWords: Record<string, string> = {
+    en: 'women',
+    es: 'mujeres',
+    'pt-BR': 'mulheres',
+  };
+  const audience = audienceWords[language!];
+  await expect(page.locator('.hero-positioning')).toBeVisible();
+  await expect(page.locator('.hero-positioning')).toContainText(audience);
+  expect(await page.title()).toContain(audience);
+  await expect(page.locator('.features .section-intro > p')).toContainText(
+    audience
+  );
+  await expect(page.locator('.site-footer > p')).toContainText(audience);
+});
 Then(
   'both reproductive goals and forecast limitations are visible',
   async ({ page }) => {
@@ -44,14 +60,18 @@ Then(
   }
 );
 Then(
-  'the web app is available and mobile testing availability is clear',
+  'the web app and Android invitation are available with iOS testing coming soon',
   async ({ page }) => {
     const links = page.locator('[data-web-app]');
     await expect(links).toHaveCount(2);
     for (const link of await links.all())
       await expect(link).toHaveAttribute('href', SITE.webApp);
     await expect(page.locator('[data-ios-soon]')).toContainText('iOS');
-    await expect(page.locator('[data-android-pending]')).toBeVisible();
+    await expect(page.locator('[data-android-invite]')).toHaveAttribute(
+      'href',
+      SITE.androidInvite
+    );
+    await expect(page.locator('[data-android-pending]')).toHaveCount(0);
     await expect(page.locator('[href*="testflight"]')).toHaveCount(0);
   }
 );

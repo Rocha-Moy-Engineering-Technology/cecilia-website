@@ -21,7 +21,7 @@ Use Node.js 24 or newer and `npm ci` from this project. The local browser suites
 
 ## Content and assets
 
-`logic/site.ts` owns the public origin, root base path, locale list, language names, and deployed web app destination. Typed copy lives under `logic/content/`; shared Astro components render each locale. The root alone redirects by browser language; explicit locale addresses never redirect. Unsupported browsers and disabled JavaScript retain English. `public/404.html` keeps missing addresses as HTTP 404 on Cloudflare Pages instead of its default single-page application fallback.
+`logic/site.ts` owns the public origin, root base path, locale list, language names, deployed web app destination, and public Firebase Android invitation. Typed copy lives under `logic/content/`; shared Astro components render each locale. The root alone redirects by browser language; explicit locale addresses never redirect. Unsupported browsers and disabled JavaScript retain English. `public/404.html` keeps missing addresses as HTTP 404 on Cloudflare Pages instead of its default single-page application fallback.
 
 The app screenshots use illustrative data from the app's existing iOS evidence gallery. WebP origin sidecars and the PNG icon metadata preserve provenance. Nunito Sans is bundled locally through Fontsource; its Open Font License is distributed in `public/fonts/LICENSE.txt`. No app API, analytics, forms, or external font requests are used by the product page.
 

@@ -34,7 +34,7 @@ describe('complete localized product content (A1.1)', () => {
       'Seu ciclo. Seus planos.'
     );
     expect(content.pt.hero.body).toBe(
-      'Para quem quer engravidar e para quem busca planejamento familiar.'
+      'Para mulheres que querem engravidar e mulheres que buscam planejamento familiar.'
     );
   });
   test.each(LOCALES)('%s contains every English field', (locale) => {
@@ -52,8 +52,14 @@ describe('complete localized product content (A1.1)', () => {
     expect(copy.beta.ios).toContain('iOS');
     expect(copy.beta.androidTitle).toBe('Android');
     expect(copy.beta.androidBody).toContain('Firebase App Distribution');
-    expect(copy.beta.androidPending.length).toBeGreaterThan(5);
+    expect(copy.beta.androidAction.length).toBeGreaterThan(5);
+    expect(copy.beta.androidBody).not.toContain('prepar');
     expect(JSON.stringify(copy)).not.toContain('TestFlight');
+  });
+  test('defines the public Android self-enrollment invitation once (A1.4)', () => {
+    expect(SITE.androidInvite).toBe(
+      'https://appdistribution.firebase.dev/i/650e791b9c851d73'
+    );
   });
   test('serves the custom domain at its root (A1.3)', () => {
     expect(SITE.origin).toBe('https://mariacecilia.app');

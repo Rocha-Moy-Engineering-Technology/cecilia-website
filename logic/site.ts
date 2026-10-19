@@ -10,4 +10,5 @@ export const SITE = {
   origin: 'https://mariacecilia.app',
   base: '/',
   webApp: 'https://cecilia-web-production.up.railway.app/',
+  androidInvite: 'https://appdistribution.firebase.dev/i/650e791b9c851d73',
 } as const;
