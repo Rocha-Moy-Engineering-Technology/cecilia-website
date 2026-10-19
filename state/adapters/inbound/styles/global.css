@@ -103,6 +103,10 @@ p {
   text-decoration: none;
   padding-block: 12px;
 }
+.section-nav a[href='#beta'] {
+  color: var(--plum);
+  font-weight: 700;
+}
 .section-nav a:hover {
   color: var(--plum);
   text-decoration: underline;

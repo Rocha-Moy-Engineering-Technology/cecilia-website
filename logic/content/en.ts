@@ -9,7 +9,7 @@ export const en: ProductContent = {
   nav: {
     features: 'The app',
     methods: 'The methods',
-    beta: 'Meet Cecilia',
+    beta: 'Join the open test',
     language: 'Choose language',
   },
   hero: {
@@ -80,8 +80,8 @@ export const en: ProductContent = {
       'Combines cycle timing with cervical mucus and temperature signs. It waits for both the temperature shift and mucus peak rules before confirming the post-ovulation phase.',
   },
   beta: {
-    title: 'Meet Cecilia.',
-    body: 'Choose how to try Cecilia: in your browser or in the Android app.',
+    title: 'Join Cecilia’s open test.',
+    body: 'Join the open test in your browser or install the Android test version.',
     webTitle: 'In your browser',
     webBody: 'Open Cecilia now, with nothing to download or install.',
     androidTitle: 'Android',

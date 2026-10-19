@@ -9,7 +9,7 @@ export const es: ProductContent = {
   nav: {
     features: 'La app',
     methods: 'Los métodos',
-    beta: 'Conoce',
+    beta: 'Participa en la prueba abierta',
     language: 'Elige el idioma',
   },
   hero: {
@@ -80,8 +80,8 @@ export const es: ProductContent = {
       'Combina las fechas del ciclo con el moco cervical y la temperatura. Espera a que se cumplan las reglas del cambio térmico y del pico de moco antes de confirmar la fase posterior a la ovulación.',
   },
   beta: {
-    title: 'Conoce a Cecilia.',
-    body: 'Elige cómo probar Cecilia: en tu navegador o en la app para Android.',
+    title: 'Participa en la prueba abierta de Cecilia.',
+    body: 'Participa en la prueba abierta desde tu navegador o instala la versión de prueba para Android.',
     webTitle: 'En tu navegador',
     webBody: 'Abre Cecilia ahora, sin descargar ni instalar una aplicación.',
     androidTitle: 'Android',

@@ -40,7 +40,7 @@ Readable contrast, keyboard navigation, semantic landmarks, descriptive image al
 
 ## Public invitation language
 
-Use “Conheça a Cecilia” and “versão de teste” in Brazilian Portuguese, “Meet Cecilia” and “test version” in English, and “Conoce a Cecilia” and “versión de prueba” in Spanish. Use explicit web-opening labels for actions. Keep Android availability truthful until its Firebase invitation is verified, and explain that iOS testing is coming soon. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
+Website navigation and the testing section explicitly invite open-test participation: “Participe do teste aberto” in Portuguese, “Join the open test” in English, and “Participa en la prueba abierta” in Spanish. Use plain “versão de teste” / “test version” / “versión de prueba” for the app versions. The poster keeps “Conheça a Cecilia” as its introduction and explicitly explains the website’s product-information and open-test purposes. Use explicit web-opening labels for actions. Keep Android availability truthful until its Firebase invitation is verified, and explain that iOS testing is coming soon. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
 
 Keep each invitation aligned across navigation, headings, buttons, installation instructions, and marketing artifacts whenever one language changes.
 

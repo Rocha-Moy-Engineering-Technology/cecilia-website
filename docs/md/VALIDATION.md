@@ -1,5 +1,15 @@
 # Validation record
 
+## October 18, 2026: unmistakable open-test navigation
+
+The header’s testing invitation now reads “Join the open test” / “Participe do teste aberto” / “Participa en la prueba abierta”. It is emphasized in plum and bold, retaining the existing testing-section anchor. The destination heading and introduction explicitly invite participation in Cecilia’s open test and explain the web/Android choices. Existing actual platform destinations, women-centered positioning and poster introduction remain intact. Product/design guidance and Service Documentation distinguish this explicit website action from the poster’s product-introduction heading.
+
+The changed production content consists of constants and declarative CSS; `npx eslint logic/content/en.ts logic/content/pt.ts logic/content/es.ts --rule 'complexity:[error,0]' --format json` reports zero executable functions, so no touched-function complexity score applies.
+
+The complete `./sh/validate.sh github-pages` gate passed all 41 tests (24 unit, 2 integration, 4 behavior, 10 browser, 1 smoke), with 100% production-logic coverage (652ms). Direct local browser checks passed the exact labels, bold emphasis, navigation to the visible testing heading, Android destination and absence of overflow in all three languages at 1440px and 390px. Desktop English and mobile Spanish previews were visually inspected; all twelve evidence-gallery captures were refreshed. No additional component improvements were identified.
+
+Publication is pending: Chrome DevTools upload rejects the agent-root ZIP because it falls outside the tool server’s configured workspace roots; Playwright is unresponsive and native upload controls do not open a chooser. The validated 47-file upload is prepared at agent-root `tmp/cecilia-website-open-test-nav.zip`, with Cloudflare’s existing Production upload form open. This change has not been published or live-verified.
+
 ## October 18, 2026: women as the central marketing theme
 
 The website now defines Cecilia prominently as an app for women in the hero, search/social titles, introduction, audience FAQ question and footer in English, Portuguese and Spanish. The existing cycle/plans headline, canonical audience sentences, real app screens, equal goal explanations, safety copy and access paths are preserved. Production is published. Live verification passed all six language/viewport combinations, including exact hero definition, page/social title, intro/footer wording, audience question, keyboard navigation/FAQ and no overflow/errors/analytics. All 47 hosted files match validated dist byte for byte. PRODUCT.md, SURFACE.md and DESIGN.md record the women-centered direction for future marketing.

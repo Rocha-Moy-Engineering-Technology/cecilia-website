@@ -9,7 +9,7 @@ export const pt: ProductContent = {
   nav: {
     features: 'O aplicativo',
     methods: 'Os métodos',
-    beta: 'Conheça',
+    beta: 'Participe do teste aberto',
     language: 'Escolha o idioma',
   },
   hero: {
@@ -80,8 +80,8 @@ export const pt: ProductContent = {
       'Combina as datas do ciclo com o muco cervical e a temperatura. Aguarda a confirmação pelas regras da mudança térmica e do pico de muco antes de confirmar a fase após a ovulação.',
   },
   beta: {
-    title: 'Conheça a Cecilia.',
-    body: 'Escolha como testar a Cecilia: direto no navegador ou no aplicativo para Android.',
+    title: 'Participe do teste aberto da Cecilia.',
+    body: 'Participe do teste aberto pelo navegador ou instale a versão de teste no Android.',
     webTitle: 'No navegador',
     webBody: 'Acesse a Cecilia agora, sem baixar ou instalar um aplicativo.',
     androidTitle: 'Android',
