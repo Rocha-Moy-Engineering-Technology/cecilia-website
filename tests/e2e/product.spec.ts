@@ -3,6 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 import { captureRoute, withRuntime } from '../support/runtime-server';
 import { SITE } from '../../logic/site';
+import { content } from '../../logic/content';
 
 for (const locale of ['en', 'es', 'pt']) {
   for (const width of [1440, 390]) {
@@ -10,14 +11,57 @@ for (const locale of ['en', 'es', 'pt']) {
       page,
     }) => {
       await withRuntime(async ({ baseURL }) => {
-        await page.setViewportSize({ width, height: 960 });
+        await page.setViewportSize({
+          width,
+          height: width === 390 ? 740 : 960,
+        });
         const errors: string[] = [];
         page.on('pageerror', (error) => errors.push(error.message));
         const response = await page.goto(`${baseURL}/${locale}/`);
         expect(response?.status()).toBe(200);
+        const badges = page.locator('.hero .download-badge');
+        await expect(badges).toHaveCount(2);
+        const badgeCopy = content[locale as keyof typeof content].beta;
+        for (const [platform, action] of [
+          ['ios', badgeCopy.iosAction],
+          ['android', badgeCopy.androidAction],
+        ]) {
+          const badge = page.locator(`.hero [data-${platform}-invite]`);
+          await expect(badge).toHaveAccessibleName(action);
+          await expect(badge.locator('img')).toHaveAttribute(
+            'src',
+            `/icons/${platform}.svg`
+          );
+          await expect(badge.locator('img')).toHaveJSProperty('complete', true);
+          expect(
+            await badge
+              .locator('img')
+              .evaluate((img: HTMLImageElement) => img.naturalWidth)
+          ).toBeGreaterThan(0);
+        }
+        const firstBadge = await badges.nth(0).boundingBox();
+        const secondBadge = await badges.nth(1).boundingBox();
+        expect(firstBadge?.width).toBeCloseTo(secondBadge?.width ?? 0, 0);
+        expect(firstBadge?.height).toBeCloseTo(secondBadge?.height ?? 0, 0);
+        expect(firstBadge?.y).toBeCloseTo(secondBadge?.y ?? 0, 0);
         await expect(page.locator('html')).toHaveAttribute(
           'lang',
           locale === 'pt' ? 'pt-BR' : locale
+        );
+        await expect(page.locator('.hero [data-ios-invite]')).toHaveAttribute(
+          'href',
+          SITE.iosInvite
+        );
+        await expect(page.locator('.hero [data-ios-invite]')).toBeInViewport({
+          ratio: 1,
+        });
+        await expect(
+          page.locator('.hero [data-android-invite]')
+        ).toBeInViewport({
+          ratio: 1,
+        });
+        await expect(page.locator('[data-ios-setup]')).toHaveText(
+          content[locale as keyof typeof content].beta.iosSetup
         );
         await captureRoute(page, `product-${locale}-${width}-closed`, '/');
         for (const link of await page.locator('.section-nav a').all()) {
@@ -72,6 +116,20 @@ test('A1.2 root selects the first supported browser language', async ({
   });
 });
 
+// CECILIA-WEB-BDD-001 / SDOC A1.4: installing TestFlight precedes joining Cecilia.
+test('A1.4 the iPhone action opens the public TestFlight invitation', async ({
+  page,
+}) => {
+  await withRuntime(async ({ baseURL }) => {
+    await page.route(SITE.iosInvite, (route) =>
+      route.fulfill({ body: 'Public Cecilia TestFlight invitation' })
+    );
+    await page.goto(`${baseURL}/en/`);
+    await page.locator('.hero [data-ios-invite]').click();
+    await expect(page).toHaveURL(SITE.iosInvite);
+  });
+});
+
 test('A1.2/A1.3 explicit locales are preserved and English works without JavaScript', async ({
   browser,
 }) => {
@@ -116,7 +174,7 @@ test('A1.4 the Android action opens the public Firebase self-invitation', async 
       route.fulfill({ body: 'Public Android test enrollment' })
     );
     await page.goto(`${baseURL}/pt/`);
-    await page.locator('[data-android-invite]').click();
+    await page.locator('.hero [data-android-invite]').click();
     await expect(page).toHaveURL(SITE.androidInvite);
   });
 });

@@ -1,0 +1,33 @@
+---
+import { SITE } from '../../../../logic/site';
+
+interface Props {
+  platform: 'ios' | 'android';
+  label: string;
+  action: string;
+}
+
+const { platform, label, action } = Astro.props;
+const destinations = { ios: SITE.iosInvite, android: SITE.androidInvite };
+const names = { ios: 'iOS', android: 'Android' };
+---
+
+<a
+  class="download-badge"
+  href={destinations[platform]}
+  aria-label={action}
+  data-ios-invite={platform === 'ios' ? '' : undefined}
+  data-android-invite={platform === 'android' ? '' : undefined}
+>
+  <img
+    src={`${import.meta.env.BASE_URL}icons/${platform}.svg`}
+    width="36"
+    height="38"
+    alt=""
+    aria-hidden="true"
+  />
+  <span class="download-copy">
+    <span class="download-label">{label}</span>
+    <span class="download-platform">{names[platform]}</span>
+  </span>
+</a>

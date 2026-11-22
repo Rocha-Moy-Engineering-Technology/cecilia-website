@@ -18,7 +18,7 @@ export const en: ProductContent = {
     positioning: 'An app for women.',
     body: 'For women trying to conceive and women seeking family planning.',
     action: 'Open the web app',
-    note: 'Use in your browser, with no installation. iOS testing available soon.',
+    note: 'Test on iPhone or Android, or use your browser without installing.',
   },
   example: 'Example screens · Illustrative cycle data',
   goals: {
@@ -80,17 +80,22 @@ export const en: ProductContent = {
       'Combines cycle timing with cervical mucus and temperature signs. It waits for both the temperature shift and mucus peak rules before confirming the post-ovulation phase.',
   },
   beta: {
+    downloadLabel: 'Download for',
     title: 'Join Cecilia’s open test.',
-    body: 'Join the open test in your browser or install the Android test version.',
+    body: 'Choose how to join the open test: on iPhone, on Android, or in your browser.',
     webTitle: 'In your browser',
     webBody: 'Open Cecilia now, with nothing to download or install.',
+    iosTitle: 'iPhone · iOS',
+    iosBody: 'Install the iPhone test version through Apple’s TestFlight.',
+    iosAction: 'Download for iOS via TestFlight',
+    iosSetup:
+      'Open the invitation on your iPhone. If needed, install TestFlight first. Then return here and tap the same invitation again to accept the test and install Cecilia.',
     androidTitle: 'Android',
     androidBody:
       'Install the Android test version through Firebase App Distribution. Open the invitation, sign in with your Google account, and follow the instructions on your phone.',
-    androidAction: 'Join the Android test',
+    androidAction: 'Download for Android via Firebase App Distribution',
     setup:
       'Once you sign in, choose your goal, set up your profile, and start logging your signs.',
-    ios: 'iOS testing will be available soon. Meanwhile, use the web app on your iPhone or iPad.',
     note: 'This is a test version. Features and the experience may change as the app develops.',
   },
   faqTitle: 'A few things to know.',

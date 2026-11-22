@@ -6,7 +6,7 @@ Feature: Cecilia product website
     Then Cecilia is clearly presented as an app for women
     And the cycle features and example screens are available
     And both reproductive goals and forecast limitations are visible
-    And the web app and Android invitation are available with iOS testing coming soon
+    And the web app, TestFlight invitation, and Android invitation are available
     When I open the first frequently asked question
     Then its answer is visible
     When I follow the features navigation link

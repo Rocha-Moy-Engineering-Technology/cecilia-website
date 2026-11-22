@@ -197,16 +197,17 @@ Motion is limited to smooth anchor scrolling, action background and arrow-gap tr
 
 ## Shapes
 
-Primary actions are fully rounded pills. Screenshot figures have softly rounded corners; app screens use a larger radius, reduced on compact layouts. Thin dividers use a single-pixel stroke. The five-color divider comprises equal-length segments with a small rounded end treatment (6px).
+Native download actions are compact rounded rectangles; the web action in the detailed testing section remains a plum pill. Screenshot figures have softly rounded corners; app screens use a larger radius, reduced on compact layouts. Thin dividers use a single-pixel stroke. The five-color divider comprises equal-length segments with a small rounded end treatment (6px).
 
 The original cycle-ring icon remains an image asset. Action arrows and question plus signs are inline vector paths, with consistent small dimensions (20px).
 
 ## Components
 
-- **Primary action:** Plum pill with white text, an inline arrow, and generous horizontal padding. Minimum height is (56px), becoming (54px) on compact layouts. Hover deepens the background and expands the text-to-arrow gap from (24px) to (30px). The same component appears in the hero and beta section.
+- **Web action:** The detailed web option uses the existing plum pill with a white label and arrow. The hero offers web access as a secondary text link.
+- **Native download badge:** DownloadBadge.astro renders both platforms as matching dark rectangles (#171416), with a thin muted border, 10px corners, a local white Apple or Android glyph, a translated download label, and a bold platform name. Desktop badges are 194px wide and at least 66px high. The two hero badges remain side by side on phones, using equal grid columns; typography and icon sizes reduce below 360px. Arrows are reserved for web actions. Accessible names include the actual TestFlight or Firebase destination. The licensed Font Awesome 7.3.1 vector files retain their attribution comments.
 - **Navigation:** The open-test participation link is plum and bold to distinguish the available action from informational sections. Ordinary text links retain visible hover and keyboard states. Section links use plum and an underline on hover. The selected language uses plum, heavier weight, and an underline. Locale choices remain visible at compact widths.
 - **Screenshot figures:** Today uses rose, Calendar uses sand, and Chart uses sage. Each figure contains an upright real screenshot, a centered example-data caption, and a soft screen shadow. Screen width caps at (264px), becoming (228px) on compact layouts. Figure top padding becomes (28px) at that breakpoint.
-- **Testing options:** Two open columns with top dividers separate web access from Android Firebase enrollment. Each available option uses the existing primary action component, with installation guidance beside the Android invitation. The profile setup sentence and iOS coming-soon notice follow. Below 760px, options stack with a 32px gap. Only verified destinations are shown.
+- **Testing options:** The hero presents iPhone and Android invitation buttons immediately, with web access as a secondary text link. Below, three open columns with top dividers offer iPhone TestFlight, Android Firebase enrollment, and web access. Installation guidance explains returning to the same invitation after installing TestFlight. The profile setup sentence follows. Below 760px, the detailed options stack with a 32px gap; the hero download badges remain paired. Only verified destinations are shown.
 - **Frequently asked questions (FAQ):** Native expandable rows use thin bottom dividers, a bold summary, and a plum plus sign that rotates (45deg) when open. Answers have top clearance (12px) and bottom padding (24px).
 - **Wordmark:** The original cycle icon sits beside the plum Cecilia name. Header text is (28px), becoming (25px) on compact layouts; the footer uses (23px).
 

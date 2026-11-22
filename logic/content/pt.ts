@@ -18,7 +18,7 @@ export const pt: ProductContent = {
     positioning: 'Um aplicativo para mulheres.',
     body: 'Para mulheres que querem engravidar e mulheres que buscam planejamento familiar.',
     action: 'Abrir o app web',
-    note: 'Use no navegador, sem instalar. Testes no iOS em breve.',
+    note: 'Teste no iPhone ou Android, ou use no navegador sem instalar.',
   },
   example: 'Telas de exemplo · Dados ilustrativos de ciclo',
   goals: {
@@ -80,17 +80,22 @@ export const pt: ProductContent = {
       'Combina as datas do ciclo com o muco cervical e a temperatura. Aguarda a confirmação pelas regras da mudança térmica e do pico de muco antes de confirmar a fase após a ovulação.',
   },
   beta: {
+    downloadLabel: 'Baixar para',
     title: 'Participe do teste aberto da Cecilia.',
-    body: 'Participe do teste aberto pelo navegador ou instale a versão de teste no Android.',
+    body: 'Escolha como participar do teste aberto: no iPhone, no Android ou no navegador.',
     webTitle: 'No navegador',
     webBody: 'Acesse a Cecilia agora, sem baixar ou instalar um aplicativo.',
+    iosTitle: 'iPhone · iOS',
+    iosBody: 'Instale a versão de teste no iPhone pelo TestFlight da Apple.',
+    iosAction: 'Baixar para iOS pelo TestFlight',
+    iosSetup:
+      'Abra o convite no iPhone. Se necessário, instale primeiro o TestFlight. Depois, volte aqui e toque no mesmo convite novamente para aceitar o teste e instalar a Cecilia.',
     androidTitle: 'Android',
     androidBody:
       'Instale a versão de teste pelo Firebase App Distribution. Abra o convite com sua conta Google e siga as instruções no celular.',
-    androidAction: 'Testar no Android',
+    androidAction: 'Baixar para Android pelo Firebase App Distribution',
     setup:
       'Ao entrar, escolha seu objetivo, configure seu perfil e comece a registrar seus sinais.',
-    ios: 'Testes no iOS estarão disponíveis em breve. Enquanto isso, use o app web no seu iPhone ou iPad.',
     note: 'Esta é uma versão de teste. As funcionalidades e a experiência podem mudar à medida que o aplicativo evolui.',
   },
   faqTitle: 'Algumas coisas para saber.',

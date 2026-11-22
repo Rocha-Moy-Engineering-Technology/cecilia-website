@@ -12,11 +12,11 @@ Astro static and TypeScript, approved by the user. Cloudflare Pages hosts mariac
 
 ## Users
 
-Women trying to conceive and women seeking to avoid pregnancy through fertility awareness, including visitors testing the web app and future mobile versions.
+Women trying to conceive and women seeking to avoid pregnancy through fertility awareness, including visitors testing the web, iPhone, and Android versions.
 
 ## Product Purpose
 
-Explain the app's existing objective and features, then help visitors open the deployed web app. Android testing uses the public Firebase App Distribution invitation, without a domain restriction. Visitors sign in with a Google account and follow the phone installation instructions. iOS testing will be available soon.
+Explain the app's existing objective and features, and offer iPhone and Android testing immediately in the opening viewport through familiar dark download badges with the Apple and Android platform icons. iPhone testing uses the enabled public TestFlight invitation; explain installing TestFlight first, then returning to the same invitation to install Cecilia. Android testing uses the public Firebase App Distribution invitation, without a domain restriction. Visitors sign in with a Google account and follow the phone installation instructions. Keep direct web access as a secondary opening action and a full option in the detailed testing section.
 
 ## Capabilities and Constraints
 
@@ -32,7 +32,7 @@ The user approved extending the app's cream/plum identity, five-color cycle-ring
 
 ## Evidence on Hand
 
-Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The deployed web app address is verified. Android release 1.1.0 (1) is visible in Firebase. Its public invitation is https://appdistribution.firebase.dev/i/650e791b9c851d73, scoped only to the Android app, with no group or domain restriction.
+Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The deployed web app address and both native invitations in logic/site.ts are verified. TestFlight offers approved version 1.1.0 (16); Firebase Android offers version 1.1.0 (2), built from the same app source. The Android invitation is scoped only to that app, with no group or domain restriction.
 
 ## Accessibility & Inclusion
 
@@ -40,7 +40,7 @@ Readable contrast, keyboard navigation, semantic landmarks, descriptive image al
 
 ## Public invitation language
 
-Website navigation and the testing section explicitly invite open-test participation: “Participe do teste aberto” in Portuguese, “Join the open test” in English, and “Participa en la prueba abierta” in Spanish. Use plain “versão de teste” / “test version” / “versión de prueba” for the app versions. The poster keeps “Conheça a Cecilia” as its introduction and explicitly explains the website’s product-information and open-test purposes. Use explicit web-opening labels for actions. Keep Android availability truthful until its Firebase invitation is verified, and explain that iOS testing is coming soon. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
+Website navigation and the testing section explicitly invite open-test participation: “Participe do teste aberto” in Portuguese, “Join the open test” in English, and “Participa en la prueba abierta” in Spanish. Use plain “versão de teste” / “test version” / “versión de prueba” for the app versions. The poster keeps “Conheça a Cecilia” as its introduction and explicitly explains the website’s product-information and open-test purposes. Platform actions name their iPhone, Android, or web outcome and give the matching installation steps. Avoid “beta” in public-facing copy; existing technical keys, URLs and artifact filenames stay stable. Make clear that features and the experience may change.
 
 Keep each invitation aligned across navigation, headings, buttons, installation instructions, and marketing artifacts whenever one language changes.
 

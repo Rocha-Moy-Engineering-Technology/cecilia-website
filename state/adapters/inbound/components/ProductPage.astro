@@ -5,6 +5,7 @@ import '@fontsource/nunito-sans/latin-700.css';
 import '@fontsource/nunito-sans/latin-800.css';
 import '../styles/global.css';
 import Arrow from './Arrow.astro';
+import DownloadBadge from './DownloadBadge.astro';
 import FeatureSection from './FeatureSection.astro';
 import { LOCALES, LANGUAGE_NAMES, SITE } from '../../../../logic/site';
 import { localePath } from '../../../../logic/language';
@@ -81,7 +82,19 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
           </h1>
           <p class="hero-positioning">{copy.hero.positioning}</p>
           <p class="hero-body">{copy.hero.body}</p>
-          <a class="button" data-web-app href={SITE.webApp}
+          <div class="hero-downloads">
+            <DownloadBadge
+              platform="ios"
+              label={copy.beta.downloadLabel}
+              action={copy.beta.iosAction}
+            />
+            <DownloadBadge
+              platform="android"
+              label={copy.beta.downloadLabel}
+              action={copy.beta.androidAction}
+            />
+          </div>
+          <a class="web-alternative" data-web-app href={SITE.webApp}
             >{copy.hero.action}<Arrow /></a
           >
           <p class="availability">{copy.hero.note}</p>
@@ -189,22 +202,33 @@ const canonical = `${SITE.origin}${localePath(locale, base)}`;
         </div>
         <div class="access-options">
           <article>
+            <h3>{copy.beta.iosTitle}</h3>
+            <p>{copy.beta.iosBody}</p>
+            <DownloadBadge
+              platform="ios"
+              label={copy.beta.downloadLabel}
+              action={copy.beta.iosAction}
+            />
+            <p class="install-help" data-ios-setup>{copy.beta.iosSetup}</p>
+          </article>
+          <article>
+            <h3>{copy.beta.androidTitle}</h3>
+            <p>{copy.beta.androidBody}</p>
+            <DownloadBadge
+              platform="android"
+              label={copy.beta.downloadLabel}
+              action={copy.beta.androidAction}
+            />
+          </article>
+          <article>
             <h3>{copy.beta.webTitle}</h3>
             <p>{copy.beta.webBody}</p>
             <a class="button" data-web-app href={SITE.webApp}
               >{copy.hero.action}<Arrow /></a
             >
           </article>
-          <article>
-            <h3>{copy.beta.androidTitle}</h3>
-            <p>{copy.beta.androidBody}</p>
-            <a class="button" data-android-invite href={SITE.androidInvite}
-              >{copy.beta.androidAction}<Arrow /></a
-            >
-          </article>
         </div>
         <p class="access-setup">{copy.beta.setup}</p>
-        <p class="ios-note" data-ios-soon>{copy.beta.ios}</p>
         <p class="beta-note">{copy.beta.note}</p>
       </section>
       <section class="faq wrap" aria-labelledby="faq-title">

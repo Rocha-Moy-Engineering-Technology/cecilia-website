@@ -189,6 +189,62 @@ h1 span {
   color: var(--muted);
   margin-top: 15px;
 }
+.hero-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.download-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 194px;
+  min-height: 66px;
+  padding: 10px 16px;
+  border: 1px solid #6c6268;
+  border-radius: 10px;
+  background: #171416;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.download-badge:hover {
+  background: #332a30;
+}
+.download-badge img {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 38px;
+  object-fit: contain;
+  filter: invert(1);
+}
+.download-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+.download-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.download-platform {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.web-alternative {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-block: 10px;
+  color: var(--plum);
+  font-weight: 700;
+}
 .hero-screens {
   position: relative;
   height: 590px;
@@ -393,8 +449,8 @@ h3 {
 }
 .access-options {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 70px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
   margin-block: 44px 32px;
 }
 .access-options article {
@@ -411,19 +467,16 @@ h3 {
   color: var(--muted);
   font-size: 17px;
 }
-.access-options .button {
+.access-options .button,
+.access-options .download-badge {
   margin-top: 24px;
 }
-.access-setup,
-.ios-note {
+.access-setup {
   max-width: 70ch;
   font-size: 16px;
 }
-.ios-note {
-  margin-top: 24px;
-  border-top: 1px solid var(--line);
-  padding-top: 24px;
-  color: var(--muted);
+.access-options .install-help {
+  font-size: 14px;
 }
 .beta-note {
   font-size: 13px;
@@ -573,7 +626,7 @@ h3 {
   .hero {
     display: block;
     min-height: auto;
-    padding-block: 44px 52px;
+    padding-block: 24px 52px;
   }
   h1 {
     font-size: clamp(2.9rem, 10vw, 4.4rem);
@@ -588,6 +641,23 @@ h3 {
   .button {
     font-size: 15px;
     min-height: 54px;
+  }
+  .hero-downloads {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .hero-downloads .download-badge {
+    width: 100%;
+    gap: 9px;
+    padding-inline: 12px;
+  }
+  .hero-downloads .download-badge img {
+    flex-basis: 28px;
+    width: 28px;
+  }
+  .hero-downloads .download-platform {
+    font-size: 22px;
   }
   .hero-screens {
     height: 505px;
@@ -693,5 +763,22 @@ h3 {
   *::before,
   *::after {
     transition: none !important;
+  }
+}
+
+@media (max-width: 359px) {
+  .hero-downloads .download-badge {
+    gap: 8px;
+    padding-inline: 8px;
+  }
+  .hero-downloads .download-badge img {
+    flex-basis: 24px;
+    width: 24px;
+  }
+  .hero-downloads .download-platform {
+    font-size: 20px;
+  }
+  .hero-downloads .download-label {
+    font-size: 11px;
   }
 }

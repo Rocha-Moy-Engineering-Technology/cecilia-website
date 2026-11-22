@@ -18,7 +18,7 @@ export const es: ProductContent = {
     positioning: 'Una app para mujeres.',
     body: 'Para mujeres que quieren concebir y mujeres que buscan planificación familiar.',
     action: 'Abrir la app web',
-    note: 'Úsala en el navegador, sin instalar. Pruebas en iOS próximamente.',
+    note: 'Pruébala en iPhone o Android, o úsala en el navegador sin instalar.',
   },
   example: 'Pantallas de ejemplo · Datos ilustrativos del ciclo',
   goals: {
@@ -80,17 +80,24 @@ export const es: ProductContent = {
       'Combina las fechas del ciclo con el moco cervical y la temperatura. Espera a que se cumplan las reglas del cambio térmico y del pico de moco antes de confirmar la fase posterior a la ovulación.',
   },
   beta: {
+    downloadLabel: 'Descargar para',
     title: 'Participa en la prueba abierta de Cecilia.',
-    body: 'Participa en la prueba abierta desde tu navegador o instala la versión de prueba para Android.',
+    body: 'Elige cómo participar en la prueba abierta: en iPhone, en Android o en el navegador.',
     webTitle: 'En tu navegador',
     webBody: 'Abre Cecilia ahora, sin descargar ni instalar una aplicación.',
+    iosTitle: 'iPhone · iOS',
+    iosBody:
+      'Instala la versión de prueba en tu iPhone a través de TestFlight de Apple.',
+    iosAction: 'Descargar para iOS a través de TestFlight',
+    iosSetup:
+      'Abre la invitación en tu iPhone. Si es necesario, instala primero TestFlight. Después, vuelve aquí y toca la misma invitación de nuevo para aceptar la prueba e instalar Cecilia.',
     androidTitle: 'Android',
     androidBody:
       'Instala la versión de prueba a través de Firebase App Distribution. Abre la invitación con tu cuenta de Google y sigue las instrucciones en tu celular.',
-    androidAction: 'Probar en Android',
+    androidAction:
+      'Descargar para Android a través de Firebase App Distribution',
     setup:
       'Al iniciar sesión, elige tu objetivo, configura tu perfil y empieza a registrar tus señales.',
-    ios: 'Las pruebas en iOS estarán disponibles pronto. Mientras tanto, usa la app web en tu iPhone o iPad.',
     note: 'Esta es una versión de prueba. Las funciones y la experiencia pueden cambiar a medida que se desarrolla la app.',
   },
   faqTitle: 'Algunas cosas que debes saber.',

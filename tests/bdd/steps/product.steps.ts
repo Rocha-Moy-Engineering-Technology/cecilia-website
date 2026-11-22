@@ -60,19 +60,26 @@ Then(
   }
 );
 Then(
-  'the web app and Android invitation are available with iOS testing coming soon',
+  'the web app, TestFlight invitation, and Android invitation are available',
   async ({ page }) => {
     const links = page.locator('[data-web-app]');
     await expect(links).toHaveCount(2);
     for (const link of await links.all())
       await expect(link).toHaveAttribute('href', SITE.webApp);
-    await expect(page.locator('[data-ios-soon]')).toContainText('iOS');
-    await expect(page.locator('[data-android-invite]')).toHaveAttribute(
-      'href',
-      SITE.androidInvite
-    );
+    await expect(page.locator('[data-ios-soon]')).toHaveCount(0);
+    const iosLinks = page.locator('[data-ios-invite]');
+    await expect(page.locator('.download-badge')).toHaveCount(4);
+    await expect(page.locator('.download-badge img')).toHaveCount(4);
+    await expect(iosLinks).toHaveCount(2);
+    for (const link of await iosLinks.all())
+      await expect(link).toHaveAttribute('href', SITE.iosInvite);
+    await expect(page.locator('[data-ios-setup]')).toContainText('TestFlight');
+    const androidLinks = page.locator('[data-android-invite]');
+    await expect(androidLinks).toHaveCount(2);
+    for (const link of await androidLinks.all())
+      await expect(link).toHaveAttribute('href', SITE.androidInvite);
     await expect(page.locator('[data-android-pending]')).toHaveCount(0);
-    await expect(page.locator('[href*="testflight"]')).toHaveCount(0);
+    await expect(page.locator('[href*="testflight"]')).toHaveCount(2);
   }
 );
 When('I open the first frequently asked question', async ({ page }) => {

@@ -46,15 +46,19 @@ export interface ProductContent {
     symptothermalBody: string;
   };
   beta: {
+    downloadLabel: string;
     title: string;
     body: string;
     webTitle: string;
     webBody: string;
+    iosTitle: string;
+    iosBody: string;
+    iosAction: string;
+    iosSetup: string;
     androidTitle: string;
     androidBody: string;
     androidAction: string;
     setup: string;
-    ios: string;
     note: string;
   };
   faqTitle: string;

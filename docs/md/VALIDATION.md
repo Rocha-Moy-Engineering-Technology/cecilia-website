@@ -1,5 +1,21 @@
 # Validation record
 
+## November 10, 2026: professional platform download badges
+
+Replaced the large plum native buttons with matching compact dark badges, translated download labels, and local Apple/Android icons. One shared component renders the hero and detailed testing controls; invitation destinations and installation instructions are preserved. Font Awesome Free 7.3.1 vector attribution comments are retained.
+
+The complete website gate passed all 43 tests, including icon loading, equal geometry, accessible labels, no overflow, keyboard navigation, and existing TestFlight/Firebase navigation. Additional browser checks at 320×640 confirmed that both badges and their labels fit side by side within the opening viewport in all three languages. Desktop and phone renders were visually reviewed. Production publication succeeded at https://1cf5f197.mariacecilia-4i7.pages.dev, and all 49 public files matched the validated output. Live checks passed all six locale/viewport combinations. Coverage remains 100% via npm run test:coverage, and the documented zero-threshold ESLint command measures maximum touched-component complexity 3.
+
+## November 10, 2026: native downloads in the opening viewport and CLI publication
+
+The opening section now offers both iPhone TestFlight and Android Firebase invitations, with direct web access as a secondary link. All three languages explain installation, including returning to the same invitation after installing TestFlight. The detailed section offers all three platforms. The earlier pending open-test navigation change is now published too.
+
+The full `./sh/validate.sh github-pages` gate passed 43 tests: 25 unit, 2 adapter integration, 4 behavior, 11 browser, and 1 smoke. Browser cases prove both native buttons fit the initial 1440×960 and 390×740 viewports in every language; twelve gallery captures were refreshed. `npm run test:coverage` measured 100% logic coverage, and `npx eslint logic state types astro.config.mjs --rule 'complexity:[error,0]' --format json` measured maximum touched-component complexity 3.
+
+Production publication succeeded through `npm run deploy` using pinned Wrangler 4.160.0. Cloudflare confirmed deployment `887f383e-22aa-4df3-9b58-e1fc7729c32b` as the canonical successful deployment for mariacecilia.app. A real browser matched all 47 public file hashes to validated dist/, opened the real iPhone invitation, expanded a frequently asked question, and confirmed no overflow or analytics. The public Android link still targets only Cecilia Android. Wrangler authentication uses the approved limited account/user read and Pages write permissions, stored in macOS Keychain.
+
+The user requested preferring `cf` when it supports the same upload. Cloudflare's own `cf pages deploy` implementation explicitly rejects existing Pages projects and directs them to `wrangler pages deploy`, so the existing Pages project retains Wrangler. No hosting migration was performed.
+
 ## October 18, 2026: unmistakable open-test navigation
 
 The header’s testing invitation now reads “Join the open test” / “Participe do teste aberto” / “Participa en la prueba abierta”. It is emphasized in plum and bold, retaining the existing testing-section anchor. The destination heading and introduction explicitly invite participation in Cecilia’s open test and explain the web/Android choices. Existing actual platform destinations, women-centered positioning and poster introduction remain intact. Product/design guidance and Service Documentation distinguish this explicit website action from the poster’s product-introduction heading.

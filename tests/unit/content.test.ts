@@ -45,21 +45,30 @@ describe('complete localized product content (A1.1)', () => {
   });
   test('defines the deployed web app destination once (A1.4)', () => {
     expect(SITE.webApp).toBe('https://cecilia-web-production.up.railway.app/');
-    expect(Object.values(SITE).join(' ')).not.toContain('testflight');
   });
   test.each(LOCALES)('%s explains current platform availability', (locale) => {
     const copy = content[locale];
-    expect(copy.beta.ios).toContain('iOS');
+    expect(copy.beta.iosTitle).toBe('iPhone · iOS');
+    expect(copy.beta.iosBody).toContain('TestFlight');
+    expect(copy.beta.iosAction.length).toBeGreaterThan(5);
+    expect(copy.beta.downloadLabel.length).toBeGreaterThan(5);
+    expect(copy.beta.iosAction).toContain('TestFlight');
+    expect(copy.beta.androidAction).toContain('Firebase');
+    expect(copy.beta.iosSetup).toContain('TestFlight');
     expect(copy.beta.androidTitle).toBe('Android');
     expect(copy.beta.androidBody).toContain('Firebase App Distribution');
     expect(copy.beta.androidAction.length).toBeGreaterThan(5);
     expect(copy.beta.androidBody).not.toContain('prepar');
-    expect(JSON.stringify(copy)).not.toContain('TestFlight');
+    expect(copy.hero.note).toContain('Android');
+    expect(copy.hero.note).toContain('iPhone');
   });
   test('defines the public Android self-enrollment invitation once (A1.4)', () => {
     expect(SITE.androidInvite).toBe(
       'https://appdistribution.firebase.dev/i/650e791b9c851d73'
     );
+  });
+  test('uses the enabled public TestFlight invitation (A1.4)', () => {
+    expect(SITE.iosInvite).toBe('https://testflight.apple.com/join/eztgqFh6');
   });
   test('serves the custom domain at its root (A1.3)', () => {
     expect(SITE.origin).toBe('https://mariacecilia.app');
