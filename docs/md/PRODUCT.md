@@ -32,7 +32,7 @@ The user approved extending the app's cream/plum identity, five-color cycle-ring
 
 ## Evidence on Hand
 
-Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The deployed web app address and both native invitations in logic/site.ts are verified. TestFlight offers approved version 1.1.0 (17); Firebase Android offers version 1.1.0 (3), built from the same app source (released 2026-11-24). The Android invitation is scoped only to that app, with no group or domain restriction.
+Real localized compact app screenshots of both goal experiences use explicitly illustrative fixture data; the existing Chart examples come from the iOS evidence gallery. Website assets preserve these screens and label them as examples. The deployed web app address and both native invitations in logic/site.ts are verified. TestFlight holds version 1.1.0 (18), which has not passed Beta App Review yet (App Store Connect refused its submission on 2026-11-24, when the earlier approved builds 1.1.0 (16) and (17) read expired); Firebase Android offers version 1.1.0 (4), built from the same app source (released 2026-11-24). The Android invitation is scoped only to that app, with no group or domain restriction.
 
 ## Accessibility & Inclusion
 
