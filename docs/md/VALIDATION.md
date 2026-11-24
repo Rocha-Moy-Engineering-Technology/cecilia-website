@@ -103,7 +103,7 @@ From the agent root:
 
 ```sh
 ./sh/validate.sh github-pages
-uv run agent_commons/agent_tools/scripts/gherkin.py check module/cecilia-website
+.scripts/gherkin.py check module/cecilia-website
 ```
 
 From this project:
