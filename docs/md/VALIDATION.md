@@ -1,5 +1,7 @@
 # Validation record
 
+Each section records what was checked on the date in its heading and is not updated afterwards; `docs/md/PRODUCT.md` names the current releases.
+
 ## November 10, 2026: professional platform download badges
 
 Replaced the large plum native buttons with matching compact dark badges, translated download labels, and local Apple/Android icons. One shared component renders the hero and detailed testing controls; invitation destinations and installation instructions are preserved. Font Awesome Free 7.3.1 vector attribution comments are retained.
@@ -52,7 +54,7 @@ The English audience sentence now reads “For people trying to conceive and peo
 
 ## October 18, 2026: public Android self-enrollment
 
-Android release 1.1.0 (1) is uploaded. The public app-only invitation is https://appdistribution.firebase.dev/i/650e791b9c851d73, without a group or domain restriction. Signed-out verification opens Google sign-in; signed-in verification shows one Cecilia Android app (app.mariacecilia.cecilia) and a self-enrollment form. No enrollment or email submission was performed. An initial shared-group invitation exposed the legacy iOS build, so it was replaced before publication; no pre-existing invitation was changed.
+Android release 1.1.0 (1) was uploaded that day. The public app-only invitation is https://appdistribution.firebase.dev/i/650e791b9c851d73, without a group or domain restriction. Signed-out verification opens Google sign-in; signed-in verification shows one Cecilia Android app (app.mariacecilia.cecilia) and a self-enrollment form. No enrollment or email submission was performed. An initial shared-group invitation exposed the legacy iOS build, so it was replaced before publication; no pre-existing invitation was changed.
 
 The final `./sh/validate.sh github-pages` gate passed 41 tests: 24 unit, 2 adapter integration, 4 behavior, 10 browser and 1 smoke. The measured coverage run took 566 milliseconds. Production publication succeeded. Live browser checks passed en/es/pt at 1440px and 390px, and the actual Android action reached the Android-only enrollment form. All 47 hosted files match the validated build byte for byte. All three website languages now have an Android test action and Firebase/Google-account guidance, alongside existing web access and the iOS coming-soon notice. Posters remain website-only and unchanged. `npm run test:coverage` measures 100% of production logic lines/statements/branches/functions. `npx eslint logic state types astro.config.mjs --rule 'complexity:[error,0]' --format json` measures a maximum of 3 in the touched component (diagnostic deliberately exits 1). The completed UI detector returned no findings. Desktop, phone and intermediate testing-options renders were visually checked with no overflow.
 
